@@ -1629,7 +1629,16 @@ def classify_network_type(ip: str, country: str, asn, org: str, ip_api_rec: dict
 def outbound_to_clash(node: dict, name: str) -> dict:
     """sing-box outbound → Clash (Meta/mihomo) proxy dict"""
     t = node.get("type")
-    server, port = node["server"], node["server_port"]
+    server = node["server"]
+    # 端口跳跃节点 (hy2 mport): parse_hysteria2 会 pop 掉 server_port, 只留 server_ports
+    # (与 outbound_to_v2ray_link 的取值逻辑保持一致; 原先直接取 node["server_port"] 会 KeyError,
+    #  导致整个 export_all 崩溃、产出完全写不出来)
+    if "server_port" in node:
+        port = node["server_port"]
+    elif node.get("server_ports"):
+        port = int(str(node["server_ports"][0]).split(":")[0])
+    else:
+        return None
     proxy = {"name": name, "server": server, "port": port, "udp": True}
 
     if t == "vless":

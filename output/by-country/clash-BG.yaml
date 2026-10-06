@@ -4,49 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
-  server: 213.183.63.60
-  port: 9030
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  server: 213.183.63.60
-  port: 9066
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  server: 213.183.63.60
-  port: 9098
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
+- name: 🇧🇬 保加利亚 (Bulgaria) 01
   server: 213.183.63.60
   port: 9061
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 4R3hUfZ2FHhDmNcP
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
+- name: 🇧🇬 保加利亚 (Bulgaria) 02
+  server: 213.183.63.60
+  port: 9066
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 2KUaE2a8NWTvuCZ3
+- name: 🇧🇬 保加利亚 (Bulgaria) 03
   server: 193.148.59.178
   port: 443
   udp: true
@@ -58,8 +30,29 @@ proxies:
     public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
     short-id: e3daad69
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
+  client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 04
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 05
+  server: 213.183.63.60
+  port: 9030
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: GeregetR8cvQHzYr
+- name: 🇧🇬 保加利亚 (Bulgaria) 06
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 (Bulgaria) 07
   server: 136.175.82.85
   port: 18775
   udp: true
@@ -77,26 +70,24 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 01
+  - 🇧🇬 保加利亚 (Bulgaria) 02
+  - 🇧🇬 保加利亚 (Bulgaria) 03
+  - 🇧🇬 保加利亚 (Bulgaria) 04
+  - 🇧🇬 保加利亚 (Bulgaria) 05
+  - 🇧🇬 保加利亚 (Bulgaria) 06
+  - 🇧🇬 保加利亚 (Bulgaria) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 01
+  - 🇧🇬 保加利亚 (Bulgaria) 02
+  - 🇧🇬 保加利亚 (Bulgaria) 03
+  - 🇧🇬 保加利亚 (Bulgaria) 04
+  - 🇧🇬 保加利亚 (Bulgaria) 05
+  - 🇧🇬 保加利亚 (Bulgaria) 06
+  - 🇧🇬 保加利亚 (Bulgaria) 07
 rules:
 - MATCH,PROXIES

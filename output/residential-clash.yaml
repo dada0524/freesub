@@ -4,7 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+- name: 🇦🇹 奥地利 (Austria) 01 (家宽)
+  server: 31.77.227.6
+  port: 52006
+  udp: true
+  type: vless
+  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: bigdick.gamegrow.ru
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 02 (家宽)
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
   server: 45.192.201.140
   port: 443
   udp: true
@@ -19,18 +39,13 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇦🇹 奥地利 (Austria) 02 (家宽) - xiaohe
-  server: 31.77.227.6
-  port: 52006
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽)
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
   type: vless
-  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
-  flow: xtls-rprx-vision
-  tls: true
-  servername: bigdick.gamegrow.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
   server: sbgfgov.vip24.wogacnmnagfwgov.com
   port: 11224
   udp: true
@@ -38,20 +53,7 @@ proxies:
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
-  server: p141.panda001.net
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇸🇬 新加坡 (Singapore) 06 (家宽) - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 06 (家宽)
   server: s3.huhiuh.space
   port: 18642
   udp: true
@@ -64,22 +66,22 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇦🇹 奥地利 (Austria) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - xiaohe
+  - 🇦🇹 奥地利 (Austria) 01 (家宽)
+  - 🇺🇸 美国 (United States) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
+  - 🇸🇬 新加坡 (Singapore) 06 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇦🇹 奥地利 (Austria) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - xiaohe
+  - 🇦🇹 奥地利 (Austria) 01 (家宽)
+  - 🇺🇸 美国 (United States) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
+  - 🇸🇬 新加坡 (Singapore) 06 (家宽)
 rules:
 - MATCH,PROXIES

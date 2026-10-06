@@ -2341,6 +2341,18 @@ def update_readme(total_count, res_count):
     res_table = table_rows(res_counts, "residential-by-country")
     normal_table = table_rows(normal_counts, "by-country")
 
+    # ★ 家宽合并订阅行: 把全部家宽节点集中到一个链接。
+    #   原先只提供按国家拆分的行, 用户想订阅"全部家宽"得同时订阅多个国家链接。
+    res_all_row = (
+        f"| 🏠 **全部家宽 (合并)** | `{res_count}` | "
+        f"[CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/residential.txt) · "
+        f"[Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/residential.txt) | "
+        f"[CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/residential-clash.yaml) · "
+        f"[Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/residential-clash.yaml) | "
+        f"[CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/residential-singbox.json) · "
+        f"[Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/residential-singbox.json) |"
+    )
+
     readme = f"""# 🚀 免费节点自动测活订阅池 (含真实家宽/住宅IP甄选)
 
 > 👤 **定制规范命名**: 所有订阅节点均重命名为 `国旗 地区 序号 (家宽)`
@@ -2359,12 +2371,13 @@ def update_readme(total_count, res_count):
 
 ---
 
-## 🏠 按照家宽分类节点订阅 (住宅 IP 专区)
+## 🏠 家宽节点订阅 (住宅 IP 专区)
 
 > 家宽判定六重信号: ① ip-api.com `hosting` 字段 ② `mobile` 移动网络字段 ③ Cloudflare/主流 CDN Anycast 网段比对 ④ MaxMind GeoLite2 ASN 白/黑名单 (覆盖 60+ 国家主流民用运营商) ⑤ rDNS/ISP 名称特征 ⑥ Scamalytics 风控评分复核 (fraud ≥75 降级、≥90 剔除)。排除所有云主机/数据中心/CDN 任播, 保留真实民用宽带与移动网络。
 
-| 家宽地区 | 节点数 | V2RayN 专属订阅 | Clash 专属订阅 | sing-box 专属订阅 |
+| 家宽范围 | 节点数 | V2RayN 订阅 | Clash 订阅 | sing-box 订阅 |
 | :--- | :---: | :---: | :---: | :---: |
+{res_all_row}
 {res_table}
 
 ---

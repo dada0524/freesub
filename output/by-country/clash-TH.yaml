@@ -24,7 +24,7 @@ proxies:
     headers:
       Host: ais.speedtest.net
 - name: 🇹🇭 泰国 (Thailand) 03
-  server: 104.16.10.2
+  server: 104.16.10.185
   port: 443
   udp: true
   type: vless
@@ -32,12 +32,20 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 04
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+- name: 🇹🇭 泰国 (Thailand) 05
   server: silversbgfgov.vip43.wogbcnmnagfwgov.com
   port: 11243
   udp: true
@@ -54,6 +62,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 02
   - 🇹🇭 泰国 (Thailand) 03
   - 🇹🇭 泰国 (Thailand) 04
+  - 🇹🇭 泰国 (Thailand) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +72,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 02
   - 🇹🇭 泰国 (Thailand) 03
   - 🇹🇭 泰国 (Thailand) 04
+  - 🇹🇭 泰国 (Thailand) 05
 rules:
 - MATCH,PROXIES

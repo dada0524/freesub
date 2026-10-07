@@ -5,36 +5,30 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 01 (家宽)",
-      "server": "31.77.227.6",
-      "server_port": 52006,
-      "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽)",
+      "server": "128.241.25.72",
+      "server_port": 30021,
+      "uuid": "65f26a08-9a5e-4b28-9004-f98676cc1e49",
       "tls": {
         "enabled": true,
-        "server_name": "bigdick.gamegrow.ru",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 02 (家宽)",
-      "server": "155.117.19.17",
-      "server_port": 443,
-      "password": "5fa748137b6d822308eea4611f474ad5",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
+        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi ",
+        "headers": {
+          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
       "server": "45.192.201.140",
       "server_port": 443,
       "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
@@ -57,10 +51,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 (移动家宽)",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50",
       "server": "test.keoplentuio.xyz",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 (家宽)",
+      "server": "s3.huhiuh.space",
+      "server_port": 18642,
+      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
     },
     {
       "type": "vmess",
@@ -72,40 +78,26 @@
       "alter_id": 2
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 (家宽)",
-      "server": "s3.huhiuh.space",
-      "server_port": 18642,
-      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 (家宽)",
-        "🇺🇸 美国 (United States) 02 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-        "🇹🇷 土耳其 (Turkey) 04 (移动家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽)",
-        "🇸🇬 新加坡 (Singapore) 06 (家宽)"
+        "🇯🇵 日本 (Japan) 01 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
+        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50",
+        "🇸🇬 新加坡 (Singapore) 04 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 (家宽)",
-        "🇺🇸 美国 (United States) 02 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-        "🇹🇷 土耳其 (Turkey) 04 (移动家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽)",
-        "🇸🇬 新加坡 (Singapore) 06 (家宽)"
+        "🇯🇵 日本 (Japan) 01 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
+        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50",
+        "🇸🇬 新加坡 (Singapore) 04 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -17,22 +17,49 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/linkvws"
+        "path": "/linkvws",
+        "headers": {
+          "Host": "aksai.org"
+        }
       }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇧🇷 巴西 (Brazil) 02",
+      "server": "brb.nnpy.org",
+      "server_port": 11100,
+      "password": "df8d55f9-fb51-442d-902a-bf8160dc051b",
+      "tls": {
+        "enabled": true,
+        "server_name": "brb.nnpy.org",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇷 巴西 (Brazil) 03",
+      "server": "216.128.168.190",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "owVdNnQcdPgthSyX"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01"
+        "🇧🇷 巴西 (Brazil) 01",
+        "🇧🇷 巴西 (Brazil) 02",
+        "🇧🇷 巴西 (Brazil) 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01"
+        "🇧🇷 巴西 (Brazil) 01",
+        "🇧🇷 巴西 (Brazil) 02",
+        "🇧🇷 巴西 (Brazil) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

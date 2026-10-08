@@ -12,6 +12,14 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02
+  server: 82.38.64.235
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  sni: hopp-swizland-new.mysynology.net
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 03
   server: 152.67.75.161
   port: 443
   udp: true
@@ -21,9 +29,9 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c13f29db6a638ad2b211b9ce2669ef27
-- name: 🇨🇭 瑞士 (Switzerland) 03
+- name: 🇨🇭 瑞士 (Switzerland) 04
   server: 208.69.78.217
-  port: 8444
+  port: 21000
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -31,14 +39,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 04
-  server: 82.38.64.229
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
-  sni: hopp-swizland-new.mysynology.net
-  skip-cert-verify: true
+  ports: 21000-21199,33000-33199
 - name: 🇨🇭 瑞士 (Switzerland) 05
   server: 45.90.59.15
   port: 443
@@ -53,8 +54,16 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 06
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 07
   server: 208.69.78.217
-  port: 21000
+  port: 8444
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -62,16 +71,33 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-  ports: 21000-21199,33000-33199
-- name: 🇨🇭 瑞士 (Switzerland) 07
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: 140.238.213.114
-  skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 08
+  server: 138.124.63.94
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2b781b4a-5942-0018-a7f3-5a07b7b488c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
+    short-id: 15bcc0a77c3cacdf
+  servername: lv-root.sworkingvpn.com
+  client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 09
+  server: 138.124.63.93
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
+    short-id: 15bcc0a77c3cacdf
+  servername: lv-root.sworkingvpn.com
+  client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 10
   server: 104.165.205.42
   port: 8443
   udp: true
@@ -79,19 +105,7 @@ proxies:
   password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
   sni: speedtestmark.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 09
-  server: 208.69.78.217
-  port: 2053
-  udp: true
-  type: vless
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  tls: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇨🇭 瑞士 (Switzerland) 10
+- name: 🇨🇭 瑞士 (Switzerland) 11
   server: 45.139.26.179
   port: 443
   udp: true
@@ -102,7 +116,7 @@ proxies:
     public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
     short-id: 15bcc0a77c3cacdf
   servername: ads.x5.ru
-  client-fingerprint: edge
+  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: api
@@ -121,6 +135,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 08
   - 🇨🇭 瑞士 (Switzerland) 09
   - 🇨🇭 瑞士 (Switzerland) 10
+  - 🇨🇭 瑞士 (Switzerland) 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -136,5 +151,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 08
   - 🇨🇭 瑞士 (Switzerland) 09
   - 🇨🇭 瑞士 (Switzerland) 10
+  - 🇨🇭 瑞士 (Switzerland) 11
 rules:
 - MATCH,PROXIES

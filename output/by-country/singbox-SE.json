@@ -30,7 +30,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -60,7 +60,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/merky-connect/de6/"
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
+        }
       }
     },
     {

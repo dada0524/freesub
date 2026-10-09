@@ -5,147 +5,50 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: 46.17.42.141
-  port: 20880
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-- name: 🇭🇰 中国香港 (Hong Kong) 02
   server: 46.17.45.31
-  port: 20880
+  port: 50660
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
-- name: 🇭🇰 中国香港 (Hong Kong) 03
+- name: 🇭🇰 中国香港 (Hong Kong) 02
   server: dog-hk.kunlun01dns.com
-  port: 21022
+  port: 21019
   udp: true
   type: vmess
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: 181.215.18.196
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: pno0e2keji2gsfea
-- name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: 181.215.18.110
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: m5nsedvdczx6x06e
-- name: 🇭🇰 中国香港 (Hong Kong) 06
-  server: 47.244.120.197
-  port: 44867
-  udp: true
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
-- name: 🇭🇰 中国香港 (Hong Kong) 07
-  server: 8.217.110.53
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: 82.29.36.250
   port: 443
   udp: true
   type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: wet3gh-OtTXd6G20ic3hdldK4wEbwtI1WGr4bvXtVmQ
-    short-id: 3467b2ee
-  servername: www.amazon.com
+    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
+    short-id: 09353d6dc5b789
+  servername: aws.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09
-  server: nas.aizhzo.com
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 10
-  server: 43.161.230.103
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11
+- name: 🇭🇰 中国香港 (Hong Kong) 04
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2����
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 12
-  server: 47.238.210.5
-  port: 13779
-  udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 13
-  server: 202.146.222.89
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 14
-  server: 185.244.208.69
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: strong-haddock.rooster465.autos
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 15
-  server: champion.xn--kivt58h.lol
-  port: 80
-  udp: true
-  type: vless
-  uuid: ed2864f9-37b3-4222-8c54-014aedc400a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 16
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 17
+- name: 🇭🇰 中国香港 (Hong Kong) 06
   server: jumpernode.site
   port: 443
   udp: true
@@ -158,7 +61,27 @@ proxies:
     short-id: 6d962e8d8a0dce
   servername: p-nt-www-amazon-com-kalias.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 18
+- name: 🇭🇰 中国香港 (Hong Kong) 07
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08
+  server: 47.238.210.5
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 09
   server: 2.27.109.179
   port: 45464
   udp: true
@@ -166,7 +89,7 @@ proxies:
   password: XuMweB2PWs
   sni: 2.27.109.179.sslip.io
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 19
+- name: 🇭🇰 中国香港 (Hong Kong) 10
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -182,14 +105,61 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 20
-  server: silversbgfgov.vip26.wogbcnmnagfwgov.com
-  port: 11226
+- name: 🇭🇰 中国香港 (Hong Kong) 11
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 12
+  server: 3696b38bsg.murphyweb.sbs
+  port: 32134
+  udp: true
+  type: vless
+  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
+    short-id: 6c6c7c97
+  servername: buylite.music.apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 13
+  server: hk2.998998.best
+  port: 443
   udp: true
   type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
   cipher: auto
+  tls: true
+  servername: server15.9966338.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /asivewritten
+    headers:
+      Host: server15.9966338.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 14
+  server: 47.243.153.153
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: i2psm3knof5qjjix.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -209,12 +179,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 12
   - 🇭🇰 中国香港 (Hong Kong) 13
   - 🇭🇰 中国香港 (Hong Kong) 14
-  - 🇭🇰 中国香港 (Hong Kong) 15
-  - 🇭🇰 中国香港 (Hong Kong) 16
-  - 🇭🇰 中国香港 (Hong Kong) 17
-  - 🇭🇰 中国香港 (Hong Kong) 18
-  - 🇭🇰 中国香港 (Hong Kong) 19
-  - 🇭🇰 中国香港 (Hong Kong) 20
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -234,11 +198,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 12
   - 🇭🇰 中国香港 (Hong Kong) 13
   - 🇭🇰 中国香港 (Hong Kong) 14
-  - 🇭🇰 中国香港 (Hong Kong) 15
-  - 🇭🇰 中国香港 (Hong Kong) 16
-  - 🇭🇰 中国香港 (Hong Kong) 17
-  - 🇭🇰 中国香港 (Hong Kong) 18
-  - 🇭🇰 中国香港 (Hong Kong) 19
-  - 🇭🇰 中国香港 (Hong Kong) 20
 rules:
 - MATCH,PROXIES

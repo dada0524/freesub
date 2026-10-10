@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01
-  server: ie.tronsg.com
+  server: loved-shark.rooster465.autos
   port: 443
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: ie.tronsg.com
-  skip-cert-verify: true
+  password: UX82473651
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 02
   server: sacred-anemone.rooster465.autos
   port: 443
@@ -21,13 +21,37 @@ proxies:
   sni: sacred-anemone.rooster465.autos
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 03
-  server: 3.253.106.233
+  server: master-possum.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: loved-shark.rooster465.autos
+  sni: master-possum.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 (Ireland) 04
+  server: ie.tronsg.com
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: ie.tronsg.com
   skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 05
+  server: adapting-basilisk.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: adapting-basilisk.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 (Ireland) 06
+  server: v4.hdacd.com
+  port: 30804
+  udp: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +60,9 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01
   - 🇮🇪 爱尔兰 (Ireland) 02
   - 🇮🇪 爱尔兰 (Ireland) 03
+  - 🇮🇪 爱尔兰 (Ireland) 04
+  - 🇮🇪 爱尔兰 (Ireland) 05
+  - 🇮🇪 爱尔兰 (Ireland) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +71,8 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01
   - 🇮🇪 爱尔兰 (Ireland) 02
   - 🇮🇪 爱尔兰 (Ireland) 03
+  - 🇮🇪 爱尔兰 (Ireland) 04
+  - 🇮🇪 爱尔兰 (Ireland) 05
+  - 🇮🇪 爱尔兰 (Ireland) 06
 rules:
 - MATCH,PROXIES

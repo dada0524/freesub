@@ -21,12 +21,12 @@ proxies:
   sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03
-  server: vpn-tw-002.fastervpn.world
+  server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
+  sni: 160.187.100.109
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04
   server: 60.248.219.78
@@ -42,6 +42,14 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
+  server: sbgfgov.vip23.wogacnmnagfwgov.com
+  port: 11223
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +59,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02
   - 🇹🇼 中国台湾 (Taiwan) 03
   - 🇹🇼 中国台湾 (Taiwan) 04
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +69,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02
   - 🇹🇼 中国台湾 (Taiwan) 03
   - 🇹🇼 中国台湾 (Taiwan) 04
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
 rules:
 - MATCH,PROXIES

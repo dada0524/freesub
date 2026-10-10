@@ -16,23 +16,15 @@ proxies:
     public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
     short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇪🇸 西班牙 (Spain) 02
-  server: 185.174.137.172
-  port: 8446
-  udp: true
-  type: hysteria2
-  password: e9dc02d400b67c727aca1620
-  sni: 185.174.137.172
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 03
   server: 108.181.121.226
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 04
+- name: 🇪🇸 西班牙 (Spain) 03
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -43,21 +35,8 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 05
-  server: 138.124.62.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
-    short-id: 15bcc0a77c3cacdf
-  servername: es-root.sworkingvpn.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 06
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 04
   server: 46.28.71.247
   port: 443
   udp: true
@@ -70,7 +49,7 @@ proxies:
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 07
+- name: 🇪🇸 西班牙 (Spain) 05
   server: 185.220.249.44
   port: 2053
   udp: true
@@ -79,26 +58,12 @@ proxies:
   tls: true
   servername: 185.220.249.44
   skip-cert-verify: false
-  client-fingerprint: random
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws-cdn1-vless
     headers:
       Host: es.fastmirror-labs.xyz
-- name: 🇪🇸 西班牙 (Spain) 08
-  server: 217.26.30.125
-  port: 7443
-  udp: true
-  type: vless
-  uuid: 4f466863-b6c5-4fdc-955e-7a601c18d89a
-  tls: true
-  reality-opts:
-    public-key: EuRD8QK-uL3uQqnQ_IC2Ybj7v8feXRxCiEaXYjhHx3c
-  servername: yahoo.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,9 +74,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03
   - 🇪🇸 西班牙 (Spain) 04
   - 🇪🇸 西班牙 (Spain) 05
-  - 🇪🇸 西班牙 (Spain) 06
-  - 🇪🇸 西班牙 (Spain) 07
-  - 🇪🇸 西班牙 (Spain) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -122,8 +84,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03
   - 🇪🇸 西班牙 (Spain) 04
   - 🇪🇸 西班牙 (Spain) 05
-  - 🇪🇸 西班牙 (Spain) 06
-  - 🇪🇸 西班牙 (Spain) 07
-  - 🇪🇸 西班牙 (Spain) 08
 rules:
 - MATCH,PROXIES

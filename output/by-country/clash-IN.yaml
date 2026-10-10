@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01
-  server: 103.169.142.30
+  server: 185.159.247.30
   port: 8880
   udp: true
   type: vless
@@ -14,8 +14,19 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime38.workers.dev
+      Host: vms.lifetime59.workers.dev
 - name: 🇮🇳 印度 (India) 02
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇮🇳 印度 (India) 03
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -27,7 +38,7 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03
+- name: 🇮🇳 印度 (India) 04
   server: 148.113.5.44
   port: 443
   udp: true
@@ -39,18 +50,7 @@ proxies:
     public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
     short-id: 221873918e0bb74d
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 04
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
+  client-fingerprint: qq
 - name: 🇮🇳 印度 (India) 05
   server: 172.105.39.124
   port: 7002

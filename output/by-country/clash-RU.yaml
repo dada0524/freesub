@@ -5,42 +5,79 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
-  server: 91.196.32.163
+  server: 104.21.3.78
   port: 443
   udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: germany3.h2corp.local
-  skip-cert-verify: true
+  type: vless
+  uuid: 1460bcd2-4268-4576-914e-184ce8ea9b88
+  tls: true
+  servername: cd0ftgj4r79qu6f7nl0ldwptxv.s2gzvugnc7arq-nzwdwavaz.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vl/FByKxzwCQW6TtZ0I?ed=2560
+    headers:
+      Host: cd0ftgj4r79qu6f7nl0ldwptxv.s2gzvugnc7arq-nzwdwavaz.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 02
-  server: 194.87.68.140
-  port: 50660
+  server: 194.87.196.13
+  port: 40440
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: 81a20429165df87e
+  password: 4938e975724d0ed1
 - name: 🇷🇺 俄罗斯 (Russia) 03
-  server: 46.17.42.141
-  port: 50660
+  server: 193.233.74.6
+  port: 8444
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 04
-  server: 46.17.41.166
-  port: 50660
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 895b4b796a357570
-- name: 🇷🇺 俄罗斯 (Russia) 05
   server: 194.38.11.86
   port: 65443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+- name: 🇷🇺 俄罗斯 (Russia) 05
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
 - name: 🇷🇺 俄罗斯 (Russia) 06
+  server: 79.174.92.222
+  port: 443
+  udp: true
+  type: vless
+  uuid: 03ca8c3f-e777-45b5-a1b1-592094ca99ee
+  tls: true
+  reality-opts:
+    public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
+    short-id: a1b2c3d4
+  servername: m.vk.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇷🇺 俄罗斯 (Russia) 07
+  server: 94.198.54.132
+  port: 443
+  udp: true
+  type: hysteria2
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 08
   server: 81.177.215.175
   port: 443
   udp: true
@@ -53,7 +90,7 @@ proxies:
     short-id: 9e4eced6e98ed4d4
   servername: github.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 07
+- name: 🇷🇺 俄罗斯 (Russia) 09
   server: du-rov.secureservice.top
   port: 8443
   udp: true
@@ -66,7 +103,15 @@ proxies:
     short-id: 3cbc3d737fb9c4af
   servername: du-rov.secureservice.top
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08
+- name: 🇷🇺 俄罗斯 (Russia) 10
+  server: alb1337.zaebalsanoproxyklinus.lol
+  port: 28152
+  udp: true
+  type: hysteria2
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: alb1337.zaebalsanoproxyklinus.lol
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 11
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -78,32 +123,14 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 09
-  server: 5.42.99.64
-  port: 8443
+- name: 🇷🇺 俄罗斯 (Russia) 12
+  server: 139.28.168.126
+  port: 8080
   udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 10
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: random
+  type: hysteria2
+  password: we_9m92rJZ93_m9Cj3KXB_mC9AS7Nx
+  sni: hopp-honkong-new.roxa.org
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,6 +146,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08
   - 🇷🇺 俄罗斯 (Russia) 09
   - 🇷🇺 俄罗斯 (Russia) 10
+  - 🇷🇺 俄罗斯 (Russia) 11
+  - 🇷🇺 俄罗斯 (Russia) 12
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -134,5 +163,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08
   - 🇷🇺 俄罗斯 (Russia) 09
   - 🇷🇺 俄罗斯 (Russia) 10
+  - 🇷🇺 俄罗斯 (Russia) 11
+  - 🇷🇺 俄罗斯 (Russia) 12
 rules:
 - MATCH,PROXIES

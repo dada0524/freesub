@@ -12,11 +12,15 @@
       "tls": {
         "enabled": true,
         "server_name": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/sync ",
         "headers": {
           "Host": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev"
         }

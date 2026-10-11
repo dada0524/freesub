@@ -5,12 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
-  server: 178.83.46.91
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 土耳其 (Turkey) 02
   server: 85.192.48.142
   port: 443
   udp: true
@@ -22,7 +16,20 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
-  client-fingerprint: ''
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02
+  server: 78.135.73.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: qq
 - name: 🇹🇷 土耳其 (Turkey) 03
   server: 62.60.233.157
   port: 8444
@@ -38,27 +45,6 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 04
-  server: 162.249.126.41
-  port: 9443
-  udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 05
-  server: 78.135.73.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 06
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -70,6 +56,19 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05
+  server: 13.143.137.169
+  port: 9443
+  udp: true
+  type: vless
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
+    short-id: e336c9a786fae301
+  servername: plaincanvas.videoclothing.xyz
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,7 +79,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03
   - 🇹🇷 土耳其 (Turkey) 04
   - 🇹🇷 土耳其 (Turkey) 05
-  - 🇹🇷 土耳其 (Turkey) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,6 +89,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03
   - 🇹🇷 土耳其 (Turkey) 04
   - 🇹🇷 土耳其 (Turkey) 05
-  - 🇹🇷 土耳其 (Turkey) 06
 rules:
 - MATCH,PROXIES

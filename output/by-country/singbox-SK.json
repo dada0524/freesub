@@ -5,16 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01",
-      "server": "support.zoom.us",
-      "server_port": 80,
-      "uuid": "2d7a04af-3ac8-40e7-aff0-9f58b2be6405",
+      "tag": "🇸🇰 斯洛伐克 (Slovakia) 01",
+      "server": "80.243.228.84",
+      "server_port": 2085,
+      "uuid": "fe33cc59-c464-4e60-9aff-2793793317bf",
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "free.sahanwickramasinghe.me"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
@@ -22,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01"
+        "🇸🇰 斯洛伐克 (Slovakia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01"
+        "🇸🇰 斯洛伐克 (Slovakia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

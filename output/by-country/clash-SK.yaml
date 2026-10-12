@@ -4,24 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇴 挪威 (Norway) 01
-  server: 185.213.23.63
-  port: 990
+- name: 🇸🇰 斯洛伐克 (Slovakia) 01
+  server: 80.243.228.84
+  port: 2085
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  type: vless
+  uuid: fe33cc59-c464-4e60-9aff-2793793317bf
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇴 挪威 (Norway) 01
+  - 🇸🇰 斯洛伐克 (Slovakia) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇴 挪威 (Norway) 01
+  - 🇸🇰 斯洛伐克 (Slovakia) 01
 rules:
 - MATCH,PROXIES

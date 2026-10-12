@@ -5,23 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 (家宽)",
-      "server": "162.159.152.4",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01",
+      "server": "z5n1.vpnpolar.online",
       "server_port": 443,
-      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
+      "uuid": "49e4b91a-bd15-4e54-9b51-41a3380afb51",
       "tls": {
         "enabled": true,
-        "server_name": "rayan-007.maxima.dpdns.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "z5n1.vpnpolar.online",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
+        "path": "/beeline",
         "headers": {
-          "Host": "rayan-007.maxima.dpdns.org"
+          "Host": "z5n1.vpnpolar.online"
         }
       }
     },
@@ -30,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 (家宽)"
+        "🇺🇦 乌克兰 (Ukraine) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 (家宽)"
+        "🇺🇦 乌克兰 (Ukraine) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

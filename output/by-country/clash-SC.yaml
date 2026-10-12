@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01
-  server: 45.139.84.4
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 7918e6f6-df8f-4a20-9c1d-59dbd1f22770
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lQcmwpXJsT5tdh9mQhcsDyiDNFe0nAVLvSc_5WnfqSY
-  servername: pl3.richforever.ru
-  client-fingerprint: random
-- name: 🇸🇨 塞舌尔 (Seychelles) 02
   server: 144.31.50.236
   port: 443
   udp: true
@@ -28,9 +16,9 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: chrome
-- name: 🇸🇨 塞舌尔 (Seychelles) 03
-  server: 156.226.168.221
+  client-fingerprint: firefox
+- name: 🇸🇨 塞舌尔 (Seychelles) 02
+  server: hk3n.wxgqlfx.vip
   port: 35193
   udp: true
   type: vless
@@ -49,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01
   - 🇸🇨 塞舌尔 (Seychelles) 02
-  - 🇸🇨 塞舌尔 (Seychelles) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01
   - 🇸🇨 塞舌尔 (Seychelles) 02
-  - 🇸🇨 塞舌尔 (Seychelles) 03
 rules:
 - MATCH,PROXIES

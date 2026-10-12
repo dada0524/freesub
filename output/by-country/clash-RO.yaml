@@ -5,32 +5,70 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01
-  server: 77.74.123.102
+  server: 77.74.123.107
   port: 8443
   udp: true
   type: hysteria2
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 03
+  server: 77.74.123.110
+  port: 995
+  udp: true
+  type: vless
+  uuid: d5eb7d7c-244c-46bd-87c9-ea1abfad915c
+  tls: true
+  servername: italy-pay-october.yyuyy.com
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /api/v1
+    headers:
+      Host: italy-pay-october.yyuyy.com
+- name: 🇷🇴 罗马尼亚 (Romania) 04
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: www.amazon.com
+  sni: 185.156.44.99
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03
-  server: hy2-new.aspidnet.xyz
+- name: 🇷🇴 罗马尼亚 (Romania) 05
+  server: 77.81.98.70
   port: 443
   udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 04
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kkRsTNjRh_XrrTM6eZllllldzoL5Z9IqlBkDtmYLMhw
+    short-id: 9b4fc5a116efd6c8
+  servername: www.aliexpress.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 06
+  server: 82.152.132.120
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3e0c1fbf-467a-49d7-abd2-3a158628f3d0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ
+    short-id: ef7c4e4302bd52d7
+  servername: ro1.gigobingo.ru
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 07
   server: 162.249.125.133
   port: 443
   udp: true
@@ -40,7 +78,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 05
+- name: 🇷🇴 罗马尼亚 (Romania) 08
   server: 46.28.67.55
   port: 443
   udp: true
@@ -52,27 +90,40 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 06
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
+  client-fingerprint: random
+- name: 🇷🇴 罗马尼亚 (Romania) 09
+  server: 194.68.44.42
+  port: 64546
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 07
-  server: glazatushi.yandex-api.com
+  password: U83u9OGpvSatIUW7LsWffr
+- name: 🇷🇴 罗马尼亚 (Romania) 10
+  server: 82.117.255.174
   port: 443
   udp: true
   type: vless
-  uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
+  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: _qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ
-    short-id: a9dc98a7dc87a7dc
-  servername: glazatushi.yandex-api.com
-  client-fingerprint: random
+    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
+    short-id: 31e91d43e553bf32
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 11
+  server: 91.199.50.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kkRsTNjRh_XrrTM6eZllllldzoL5Z9IqlBkDtmYLMhw
+    short-id: c906f73d3ba8211f
+  servername: www.alibaba.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,6 +136,10 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 05
   - 🇷🇴 罗马尼亚 (Romania) 06
   - 🇷🇴 罗马尼亚 (Romania) 07
+  - 🇷🇴 罗马尼亚 (Romania) 08
+  - 🇷🇴 罗马尼亚 (Romania) 09
+  - 🇷🇴 罗马尼亚 (Romania) 10
+  - 🇷🇴 罗马尼亚 (Romania) 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,5 +152,9 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 05
   - 🇷🇴 罗马尼亚 (Romania) 06
   - 🇷🇴 罗马尼亚 (Romania) 07
+  - 🇷🇴 罗马尼亚 (Romania) 08
+  - 🇷🇴 罗马尼亚 (Romania) 09
+  - 🇷🇴 罗马尼亚 (Romania) 10
+  - 🇷🇴 罗马尼亚 (Romania) 11
 rules:
 - MATCH,PROXIES

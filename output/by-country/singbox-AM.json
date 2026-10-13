@@ -6,25 +6,15 @@
     {
       "type": "vless",
       "tag": "🇦🇲 亚美尼亚 (Armenia) 01",
-      "server": "88.218.95.88",
-      "server_port": 443,
-      "uuid": "b8df3f50-ffef-4c7e-9ef3-d5b156a47c02",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rRg3JiP2006ldJYh2TDPAn7dtlXLcSHdgHgkGI_HZTE",
-          "short_id": "43adea0ec9f97a0a"
-        }
-      },
+      "server": "62.72.166.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime40.workers.dev"
+        }
       }
     },
     {

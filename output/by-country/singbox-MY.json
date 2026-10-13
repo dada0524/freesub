@@ -4,22 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01",
-      "server": "z5n1.vpnpolar.online",
+      "type": "trojan",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01",
+      "server": "47.250.84.25",
       "server_port": 443,
-      "uuid": "49e4b91a-bd15-4e54-9b51-41a3380afb51",
+      "password": "5931134d1cde66bf83a54acdfebe7ab2",
       "tls": {
         "enabled": true,
-        "server_name": "z5n1.vpnpolar.online",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/beeline",
-        "headers": {
-          "Host": "z5n1.vpnpolar.online"
-        }
+        "server_name": "47.250.84.25",
+        "insecure": true
       }
     },
     {
@@ -27,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01"
+        "🇲🇾 马来西亚 (Malaysia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01"
+        "🇲🇾 马来西亚 (Malaysia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

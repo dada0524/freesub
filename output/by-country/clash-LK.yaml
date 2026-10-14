@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 亚美尼亚 (Armenia) 01
-  server: 62.72.166.30
-  port: 8880
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01
+  server: free.sahanwickramasinghe.me
+  port: 80
   udp: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime40.workers.dev
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 亚美尼亚 (Armenia) 01
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 亚美尼亚 (Armenia) 01
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01
 rules:
 - MATCH,PROXIES

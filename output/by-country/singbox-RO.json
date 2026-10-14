@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01",
-      "server": "usa0001hy-noru.packet-drop-society.net",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
       "server_port": 443,
-      "password": "f7f971ce-6171-4498-9737-23b037cc11f2",
-      "tls": {
-        "enabled": true,
-        "server_name": "packet-drop-society.net",
-        "insecure": false
-      }
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "hysteria2",
@@ -23,29 +19,13 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
+        "server_name": "vk.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 03",
-      "server": "hy2-new.aspidnet.xyz",
-      "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -61,6 +41,27 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04",
+      "server": "46.28.67.55",
+      "server_port": 443,
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 05",
       "server": "146.70.124.85",
       "server_port": 443,
@@ -71,7 +72,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -81,16 +82,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06",
-      "server": "194.68.44.42",
-      "server_port": 64546,
-      "method": "chacha20-ietf-poly1305",
-      "password": "U83u9OGpvSatIUW7LsWffr"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 07",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06",
       "server": "82.117.255.174",
       "server_port": 443,
       "uuid": "679439c5-28f2-485e-af5f-60a5fcd9c36c",
@@ -111,7 +104,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 08",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 07",
       "server": "83.147.245.126",
       "server_port": 443,
       "uuid": "0cf8e402-e801-4aeb-9b7a-00a933f9f1c1",
@@ -121,33 +114,12 @@
         "server_name": "assets-str-53.nexus-infinitus.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "gLO2GRqV0iVDmVdytcJLqGyZEB5Swxb-NAOC9AL13UM",
           "short_id": "344f1f56582dda0f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 09",
-      "server": "46.28.67.55",
-      "server_port": 443,
-      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
-          "short_id": "d06d78e974491b6e"
         }
       }
     },
@@ -162,9 +134,7 @@
         "🇷🇴 罗马尼亚 (Romania) 04",
         "🇷🇴 罗马尼亚 (Romania) 05",
         "🇷🇴 罗马尼亚 (Romania) 06",
-        "🇷🇴 罗马尼亚 (Romania) 07",
-        "🇷🇴 罗马尼亚 (Romania) 08",
-        "🇷🇴 罗马尼亚 (Romania) 09"
+        "🇷🇴 罗马尼亚 (Romania) 07"
       ]
     },
     {
@@ -177,9 +147,7 @@
         "🇷🇴 罗马尼亚 (Romania) 04",
         "🇷🇴 罗马尼亚 (Romania) 05",
         "🇷🇴 罗马尼亚 (Romania) 06",
-        "🇷🇴 罗马尼亚 (Romania) 07",
-        "🇷🇴 罗马尼亚 (Romania) 08",
-        "🇷🇴 罗马尼亚 (Romania) 09"
+        "🇷🇴 罗马尼亚 (Romania) 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,26 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01",
-      "server": "93.123.39.84",
-      "server_port": 443,
-      "uuid": "5298d5c5-0633-4989-95c8-68ee13cd507e",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "ee2x.global-cdn.org",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "content.v1.Feed"
+        "server_name": "109.206.241.10",
+        "insecure": true
       }
     },
     {
@@ -37,15 +26,15 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "tls": {
         "enabled": true,
-        "server_name": "russiapower.accesscam.org",
-        "insecure": true
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false
       }
     },
     {
@@ -81,7 +70,7 @@
         "server_name": "ees92.shhflow.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -114,6 +103,27 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 07",
+      "server": "5.181.201.37",
+      "server_port": 443,
+      "uuid": "ace33fb8-c593-4b17-8f72-f3359b6e9638",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "zahvatpribaltovonline.vvzzkontaktezzvv.garden",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk",
+          "short_id": "d98e7afec9c0c359"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 08",
       "server": "ee.h1cloud.net",
       "server_port": 25895,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
@@ -122,12 +132,35 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
           "short_id": "a73f0410d728c823"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 09",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgmansion.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-ee",
+        "headers": {
+          "Host": "tgmansion.site"
         }
       }
     },
@@ -142,7 +175,9 @@
         "🇪🇪 爱沙尼亚 (Estonia) 04",
         "🇪🇪 爱沙尼亚 (Estonia) 05",
         "🇪🇪 爱沙尼亚 (Estonia) 06",
-        "🇪🇪 爱沙尼亚 (Estonia) 07"
+        "🇪🇪 爱沙尼亚 (Estonia) 07",
+        "🇪🇪 爱沙尼亚 (Estonia) 08",
+        "🇪🇪 爱沙尼亚 (Estonia) 09"
       ]
     },
     {
@@ -155,7 +190,9 @@
         "🇪🇪 爱沙尼亚 (Estonia) 04",
         "🇪🇪 爱沙尼亚 (Estonia) 05",
         "🇪🇪 爱沙尼亚 (Estonia) 06",
-        "🇪🇪 爱沙尼亚 (Estonia) 07"
+        "🇪🇪 爱沙尼亚 (Estonia) 07",
+        "🇪🇪 爱沙尼亚 (Estonia) 08",
+        "🇪🇪 爱沙尼亚 (Estonia) 09"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

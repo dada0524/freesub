@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 01",
-      "server": "185.225.195.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime18.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 02",
       "server": "35.199.90.53",
       "server_port": 443,
       "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
@@ -38,12 +24,45 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇧🇷 巴西 (Brazil) 02",
+      "server": "137.131.171.249",
+      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
+      },
+      "server_ports": [
+        "20000:30000"
+      ]
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 03",
+      "server": "platform101.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform101",
+        "headers": {
+          "Host": "platform101.halalkhor.info"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇧🇷 巴西 (Brazil) 01",
-        "🇧🇷 巴西 (Brazil) 02"
+        "🇧🇷 巴西 (Brazil) 02",
+        "🇧🇷 巴西 (Brazil) 03"
       ]
     },
     {
@@ -51,7 +70,8 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01",
-        "🇧🇷 巴西 (Brazil) 02"
+        "🇧🇷 巴西 (Brazil) 02",
+        "🇧🇷 巴西 (Brazil) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

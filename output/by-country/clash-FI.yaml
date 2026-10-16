@@ -5,59 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 185.103.110.68
-  port: 18283
+  server: fin-2.povrak.ir
+  port: 56268
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vmess
+  uuid: 9a53a545-53e3-4fce-a0ba-5cfc3c4e5a74
+  alterId: 0
+  cipher: auto
 - name: 🇫🇮 芬兰 (Finland) 02
-  server: 185.103.110.66
-  port: 18280
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 03
-  server: 65.108.3.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 05
-  server: 36a466g.fi1.h1clayd.click
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
-  tls: true
-  reality-opts:
-    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
-    short-id: b3c9d0c6bdd114a6
-  servername: 36a466g.fi1.h1clayd.click
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 0adb9638509b
-- name: 🇫🇮 芬兰 (Finland) 06
   server: 152.233.71.81
   port: 443
   udp: true
@@ -70,7 +25,14 @@ proxies:
     short-id: 1c3e8241a8743df9
   servername: brointelengence.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07
+- name: 🇫🇮 芬兰 (Finland) 03
+  server: b2a2.velqixa.ir
+  port: 39221
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Pzlcb_PeV3uRgiC2NNoNKw
+- name: 🇫🇮 芬兰 (Finland) 04
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -82,7 +44,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 08
+- name: 🇫🇮 芬兰 (Finland) 05
   server: 109.172.54.135
   port: 8444
   udp: true
@@ -96,46 +58,13 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇫🇮 芬兰 (Finland) 09
-  server: b2a2.velqixa.ir
-  port: 39221
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Pzlcb_PeV3uRgiC2NNoNKw
-- name: 🇫🇮 芬兰 (Finland) 10
-  server: 87.242.95.77
-  port: 8449
-  udp: true
-  type: vless
-  uuid: 30292475-4666-4c26-bcb2-338a0919958b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WBkO_JIRKVjfwh7GlIIACmAJaVFobgm_EebPZgk7ijU
-    short-id: c374306818a47741
-  servername: meadow.lalibobi.online
-  client-fingerprint: edge
-- name: 🇫🇮 芬兰 (Finland) 11
-  server: 188.241.54.208
-  port: 443
-  udp: true
-  type: vless
-  uuid: fbaa413d-2ffb-4e36-8444-e1b1ab829fe1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qlVZ2ehdXHCxIADkf5swgXT2ZHrpSP7HM6SKTBMQXRU
-    short-id: 456bf62e2b728b97
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 12
+- name: 🇫🇮 芬兰 (Finland) 06
   server: edge10.cyrionflare.com
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 13
+- name: 🇫🇮 芬兰 (Finland) 07
   server: fi-p1.h1cloud.net
   port: 25481
   udp: true
@@ -150,43 +79,44 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 8cb5baa18cd7
-- name: 🇫🇮 芬兰 (Finland) 14
-  server: 79.175.136.238
-  port: 7879
-  udp: true
-  type: vless
-  uuid: bd5ea9bc-16ec-408e-b933-4219ed022de1
-  tls: true
-  reality-opts:
-    public-key: 0PVs0FZprxXi0bV-YX-SkyAx6a_9GHjSZ6hpCpa1lnE
-    short-id: 63ca289314edc51b
-  servername: account.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 15
+- name: 🇫🇮 芬兰 (Finland) 08
   server: fi-p1.h1cloud.net
-  port: 25633
+  port: 25634
   udp: true
   type: vless
   uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
   tls: true
   reality-opts:
-    public-key: YLIRYJ8UkT0nSSgxJr7YckNuXnokVyEs2G6thNyx1GE
-    short-id: 200811f031ae7463
+    public-key: xjmKTfAwtZNtyMrfGSo1a-Xc807CIdJXsboMsDMROFA
+    short-id: 12e9af979082beab
   servername: www.icloud.com
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 16
-  server: app-mi-28.spbstudentlife.com
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 2894574fe211
+- name: 🇫🇮 芬兰 (Finland) 09
+  server: 3f8efdt.fi1.h1clayd.click
   port: 443
   udp: true
   type: vless
-  uuid: 090da6a8-69f7-4b49-8af9-a8f8bfb07f17
-  flow: xtls-rprx-vision
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
   tls: true
   reality-opts:
-    public-key: VpHiR2qy9ielGf500Cp5S_e9eDR_of2dthqe7bNflRk
-    short-id: 1fcb15860699f6b1
-  servername: assets-mi-28.spbstudentlife.com
-  client-fingerprint: chrome
+    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
+    short-id: 023a1e6ffc32be10
+  servername: 3f8efdt.fi1.h1clayd.click
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 10
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -202,12 +132,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 08
   - 🇫🇮 芬兰 (Finland) 09
   - 🇫🇮 芬兰 (Finland) 10
-  - 🇫🇮 芬兰 (Finland) 11
-  - 🇫🇮 芬兰 (Finland) 12
-  - 🇫🇮 芬兰 (Finland) 13
-  - 🇫🇮 芬兰 (Finland) 14
-  - 🇫🇮 芬兰 (Finland) 15
-  - 🇫🇮 芬兰 (Finland) 16
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -223,11 +147,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 08
   - 🇫🇮 芬兰 (Finland) 09
   - 🇫🇮 芬兰 (Finland) 10
-  - 🇫🇮 芬兰 (Finland) 11
-  - 🇫🇮 芬兰 (Finland) 12
-  - 🇫🇮 芬兰 (Finland) 13
-  - 🇫🇮 芬兰 (Finland) 14
-  - 🇫🇮 芬兰 (Finland) 15
-  - 🇫🇮 芬兰 (Finland) 16
 rules:
 - MATCH,PROXIES

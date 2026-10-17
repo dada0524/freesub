@@ -4,34 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
-      "server": "151.101.38.6",
-      "server_port": 443,
-      "password": "mitivpn",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.firefox.com",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
-        "headers": {
-          "Host": "mitivpn--s3.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
       "server": "213.183.63.60",
       "server_port": 9085,
       "method": "aes-256-cfb",
@@ -39,7 +13,36 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02",
+      "server": "213.183.63.60",
+      "server_port": 9030,
+      "method": "aes-256-cfb",
+      "password": "GeregetR8cvQHzYr"
+    },
+    {
+      "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03",
+      "server": "195.123.226.21",
+      "server_port": 443,
+      "uuid": "6589c320-db68-43cd-a273-b46299bab355",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo",
+          "short_id": "77bb0d07bddbc832"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04",
       "server": "213.183.63.60",
       "server_port": 9098,
       "method": "aes-256-cfb",
@@ -52,7 +55,8 @@
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01",
         "🇧🇬 保加利亚 (Bulgaria) 02",
-        "🇧🇬 保加利亚 (Bulgaria) 03"
+        "🇧🇬 保加利亚 (Bulgaria) 03",
+        "🇧🇬 保加利亚 (Bulgaria) 04"
       ]
     },
     {
@@ -61,7 +65,8 @@
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01",
         "🇧🇬 保加利亚 (Bulgaria) 02",
-        "🇧🇬 保加利亚 (Bulgaria) 03"
+        "🇧🇬 保加利亚 (Bulgaria) 03",
+        "🇧🇬 保加利亚 (Bulgaria) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

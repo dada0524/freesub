@@ -19,27 +19,27 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 02
-  server: 193.233.74.6
-  port: 8444
+  server: 172.64.145.202
+  port: 2083
   udp: true
   type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  servername: github.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
+  servername: newwk1.f1w.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newwk1.f1w.de5.net
 - name: 🇷🇺 俄罗斯 (Russia) 03
-  server: 194.38.11.86
-  port: 65443
+  server: 185.227.174.29
+  port: 8389
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  cipher: aes-256-gcm
+  password: EwUhOxemnPqaUvJgq4S8ug
 - name: 🇷🇺 俄罗斯 (Russia) 04
   server: 213.165.56.102
   port: 443
@@ -52,8 +52,44 @@ proxies:
     public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
     short-id: 57e7977c9011061c
   servername: freede.aiage.work
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 05
+  server: 193.233.74.6
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 06
+  server: 194.38.11.86
+  port: 65443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇷🇺 俄罗斯 (Russia) 07
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: j3PKOCj7wHl5Pk6thI9HyXtCa6JU180IlBpWANgFjkY=
+- name: 🇷🇺 俄罗斯 (Russia) 08
+  server: 176.32.32.108
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+- name: 🇷🇺 俄罗斯 (Russia) 09
   server: 153.80.241.206
   port: 8444
   udp: true
@@ -67,18 +103,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 06
-  server: 172.67.131.217
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 10
+  server: 38.60.223.254
+  port: 10881
   udp: true
-  type: trojan
-  password: 6c73b7937b3e44e5982f9d5efa57d8cd
-  sni: aUTO-scale-728382.BuiLD-sVc-267891.wORkErs.dEv
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/9LJwNSQPh5UJMu8TbPKBJPtkZWKkYFFl?ed=2560
-- name: 🇷🇺 俄罗斯 (Russia) 07
+  type: ss
+  cipher: aes-128-gcm
+  password: 663b3405bf0662d0105907f4ceceb9f6
+- name: 🇷🇺 俄罗斯 (Russia) 11
   server: 194.87.118.184
   port: 2053
   udp: true
@@ -86,20 +118,38 @@ proxies:
   password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
   sni: 194.87.118.184
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 08
-  server: 37.143.15.206
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 12
+  server: 194.87.196.107
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+- name: 🇷🇺 俄罗斯 (Russia) 13
+  server: du-rov.secureservice.top
+  port: 8443
   udp: true
   type: vless
-  uuid: 4599572f-bcfa-461e-bc73-d80e1ea65aa6
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-  servername: 5post-gate.x5.ru
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 09
+- name: 🇷🇺 俄罗斯 (Russia) 14
+  server: aelix-al.safire-soleiman.ir
+  port: 6311
+  udp: true
+  type: vless
+  uuid: 2ffa91fe-e1cc-4c44-a90a-45002feae978
+  tls: true
+  reality-opts:
+    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 15
   server: 139.28.168.75
   port: 10444
   udp: true
@@ -111,7 +161,7 @@ proxies:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
     short-id: 8debcf36f1cc69ff
   servername: video.yandex.ru
-  client-fingerprint: safari
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,6 +176,12 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07
   - 🇷🇺 俄罗斯 (Russia) 08
   - 🇷🇺 俄罗斯 (Russia) 09
+  - 🇷🇺 俄罗斯 (Russia) 10
+  - 🇷🇺 俄罗斯 (Russia) 11
+  - 🇷🇺 俄罗斯 (Russia) 12
+  - 🇷🇺 俄罗斯 (Russia) 13
+  - 🇷🇺 俄罗斯 (Russia) 14
+  - 🇷🇺 俄罗斯 (Russia) 15
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -140,5 +196,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07
   - 🇷🇺 俄罗斯 (Russia) 08
   - 🇷🇺 俄罗斯 (Russia) 09
+  - 🇷🇺 俄罗斯 (Russia) 10
+  - 🇷🇺 俄罗斯 (Russia) 11
+  - 🇷🇺 俄罗斯 (Russia) 12
+  - 🇷🇺 俄罗斯 (Russia) 13
+  - 🇷🇺 俄罗斯 (Russia) 14
+  - 🇷🇺 俄罗斯 (Russia) 15
 rules:
 - MATCH,PROXIES

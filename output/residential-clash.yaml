@@ -11,34 +11,7 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽)
-  server: dog-hk.kunlun01dns.com
-  port: 21041
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)
-  server: dog-hk.kunlun01dns.com
-  port: 21020
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽)
-  server: 183.109.131.75
-  port: 20086
-  udp: true
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 (Germany) 05 (家宽)
+- name: 🇩🇪 德国 (Germany) 02 (家宽)
   server: 209.38.238.229
   port: 20202
   udp: true
@@ -53,8 +26,8 @@ proxies:
     path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
     headers:
       Host: wzs.echo.net.eu.org
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
-  server: hinet1.2yly.com
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  server: 61.230.160.34
   port: 24215
   udp: true
   type: vless
@@ -63,45 +36,50 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
-- name: 🇸🇬 新加坡 (Singapore) 07 (家宽)
-  server: 152.70.253.44
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽)
+  server: t9.qifei.app
   port: 443
   udp: true
   type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  flow: xtls-rprx-vision
   tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  servername: www.amazon.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽)
+  server: 183.109.131.75
+  port: 20086
+  udp: true
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
-    headers:
-      Host: wzs.echo.net.eu.org
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)
-  - 🇰🇷 韩国 (South Korea) 04 (家宽)
-  - 🇩🇪 德国 (Germany) 05 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
-  - 🇸🇬 新加坡 (Singapore) 07 (家宽)
+  - 🇩🇪 德国 (Germany) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽)
+  - 🇰🇷 韩国 (South Korea) 05 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)
-  - 🇰🇷 韩国 (South Korea) 04 (家宽)
-  - 🇩🇪 德国 (Germany) 05 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
-  - 🇸🇬 新加坡 (Singapore) 07 (家宽)
+  - 🇩🇪 德国 (Germany) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽)
+  - 🇰🇷 韩国 (South Korea) 05 (家宽)
 rules:
 - MATCH,PROXIES

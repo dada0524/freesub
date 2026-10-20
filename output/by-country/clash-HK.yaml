@@ -5,62 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: 103.149.182.105
-  port: 8388
+  server: 47.244.120.197
+  port: 36703
   udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
+  type: vmess
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
 - name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: 82.29.36.250
-  port: 443
-  udp: true
-  type: vless
-  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
-    short-id: 09353d6dc5b789
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: google.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: 4c2d5151.266nets.com
-  port: 12001
-  udp: true
-  type: trojan
-  password: bad06c3525a6eaee1757b34776b83892
-  sni: ixigua.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06
-  server: 47.238.210.5
-  port: 13779
-  udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07
+- name: 🇭🇰 中国香港 (Hong Kong) 03
   server: 207.56.137.51
   port: 443
   udp: true
@@ -73,15 +38,48 @@ proxies:
     short-id: f713561d
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08
-  server: 2.27.109.179
-  port: 45464
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: nas.aizhzo.com
+  port: 5010
   udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 09
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: champion.xn--kivt58h.lol
+  port: 80
+  udp: true
+  type: vless
+  uuid: ed2864f9-37b3-4222-8c54-014aedc400a2
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 06
+  server: 103.149.182.79
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇭🇰 中国香港 (Hong Kong) 07
+  server: 82.29.36.250
+  port: 443
+  udp: true
+  type: vless
+  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
+    short-id: ac3342a709db
+  servername: aws.amazon.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 08
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -97,29 +95,14 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 10
-  server: nas.aizhzo.com
-  port: 5010
+- name: 🇭🇰 中国香港 (Hong Kong) 09
+  server: 2.27.109.179
+  port: 45464
   udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 11
-  server: 156.239.13.161
-  port: 51443
-  udp: true
-  type: vless
-  uuid: 3e4c67dd-eeaa-48ad-8066-0dca798cccb3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WpfLIDfNGu5tmsHEa_mrZAgTDwPYD_9TK2zagNx3kgk
-    short-id: aa5b653590725505
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,8 +117,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07
   - 🇭🇰 中国香港 (Hong Kong) 08
   - 🇭🇰 中国香港 (Hong Kong) 09
-  - 🇭🇰 中国香港 (Hong Kong) 10
-  - 🇭🇰 中国香港 (Hong Kong) 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -150,7 +131,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07
   - 🇭🇰 中国香港 (Hong Kong) 08
   - 🇭🇰 中国香港 (Hong Kong) 09
-  - 🇭🇰 中国香港 (Hong Kong) 10
-  - 🇭🇰 中国香港 (Hong Kong) 11
 rules:
 - MATCH,PROXIES

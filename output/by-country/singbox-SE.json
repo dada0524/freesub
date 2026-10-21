@@ -6,20 +6,23 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01",
-      "server": "88.216.223.66",
+      "server": "indeed.com",
       "server_port": 443,
-      "uuid": "244d9eab-3311-40c7-b47f-4968dc3088a6",
+      "uuid": "e818a20d-9bcd-4744-9061-ca51b9c8aeea",
       "tls": {
         "enabled": true,
-        "server_name": "tcpswed1.figurapn.ru",
+        "server_name": "wallweb-4ez.pages.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "868419504747f6de"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "wallweb-4ez.pages.dev"
         }
       }
     },
@@ -64,7 +67,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 04",
-      "server": "94.143.231.146",
+      "server": "sub.merky.top",
       "server_port": 443,
       "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
       "tls": {
@@ -74,7 +77,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/merky-connect/de6/"
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
+        }
       }
     },
     {

@@ -4,28 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽)
-  server: 218.237.185.234
-  port: 4652
+- name: 🇺🇸 美国 (United States) 01 (家宽)
+  server: 155.117.19.17
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇩🇪 德国 (Germany) 02 (家宽)
-  server: 209.38.238.229
-  port: 20202
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽)
+  server: dog-hk.kunlun01dns.com
+  port: 21021
   udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
-    headers:
-      Host: wzs.echo.net.eu.org
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
   server: 61.230.160.34
   port: 24215
@@ -37,49 +33,30 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽)
-  server: t9.qifei.app
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽)
+  server: p141.panda001.net
+  port: 4652
   udp: true
-  type: vless
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  servername: www.amazon.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽)
-  server: 183.109.131.75
-  port: 20086
-  udp: true
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽)
-  - 🇩🇪 德国 (Germany) 02 (家宽)
+  - 🇺🇸 美国 (United States) 01 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽)
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽)
-  - 🇰🇷 韩国 (South Korea) 05 (家宽)
+  - 🇰🇷 韩国 (South Korea) 04 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽)
-  - 🇩🇪 德国 (Germany) 02 (家宽)
+  - 🇺🇸 美国 (United States) 01 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽)
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽)
-  - 🇰🇷 韩国 (South Korea) 05 (家宽)
+  - 🇰🇷 韩国 (South Korea) 04 (家宽)
 rules:
 - MATCH,PROXIES

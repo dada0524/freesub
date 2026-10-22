@@ -22,34 +22,19 @@ proxies:
     headers:
       Host: 5.253.29.254
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03
-  server: 5.253.30.99
+  server: 5.253.42.164
   port: 40443
   udp: true
   type: vless
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
   servername: deepl.com
-  client-fingerprint: qq
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04
-  server: 2.56.175.179
-  port: 9443
-  udp: true
-  type: vless
-  uuid: 8179d7cc-82bc-4eae-a97f-5d30c6c2a812
-  tls: true
-  reality-opts:
-    public-key: 8bhS-nnIN67a292RpJsCPzXQy4CzpzOVLTPn5CiAFyg
-    short-id: 6ba7b810
-  servername: itunes.apple.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇨🇾 塞浦路斯 (Cyprus) 05
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04
   server: 5.253.28.240
   port: 2443
   udp: true
@@ -64,17 +49,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
-- name: 🇨🇾 塞浦路斯 (Cyprus) 06
-  server: dorado.yokkastars.com
+- name: 🇨🇾 塞浦路斯 (Cyprus) 05
+  server: 5.253.30.99
   port: 40443
   udp: true
   type: vless
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
   servername: deepl.com
   client-fingerprint: random
 proxy-groups:
@@ -87,7 +72,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 03
   - 🇨🇾 塞浦路斯 (Cyprus) 04
   - 🇨🇾 塞浦路斯 (Cyprus) 05
-  - 🇨🇾 塞浦路斯 (Cyprus) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,6 +82,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 03
   - 🇨🇾 塞浦路斯 (Cyprus) 04
   - 🇨🇾 塞浦路斯 (Cyprus) 05
-  - 🇨🇾 塞浦路斯 (Cyprus) 06
 rules:
 - MATCH,PROXIES

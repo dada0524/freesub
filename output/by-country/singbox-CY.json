@@ -27,51 +27,27 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 03",
-      "server": "5.253.30.99",
+      "server": "5.253.42.164",
       "server_port": 40443,
-      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
+      "uuid": "e99ba96d-dec8-42eb-be53-19e71eef7cab",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
+          "public_key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw",
+          "short_id": "68a8"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 04",
-      "server": "2.56.175.179",
-      "server_port": 9443,
-      "uuid": "8179d7cc-82bc-4eae-a97f-5d30c6c2a812",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8bhS-nnIN67a292RpJsCPzXQy4CzpzOVLTPn5CiAFyg",
-          "short_id": "6ba7b810"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 05",
       "server": "5.253.28.240",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
@@ -95,10 +71,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 06",
-      "server": "dorado.yokkastars.com",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 05",
+      "server": "5.253.30.99",
       "server_port": 40443,
-      "uuid": "af5eac96-e478-488a-bc8c-45269d7e8847",
+      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -109,8 +85,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw",
-          "short_id": "68a8"
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
         }
       }
     },
@@ -123,8 +99,7 @@
         "🇨🇾 塞浦路斯 (Cyprus) 02",
         "🇨🇾 塞浦路斯 (Cyprus) 03",
         "🇨🇾 塞浦路斯 (Cyprus) 04",
-        "🇨🇾 塞浦路斯 (Cyprus) 05",
-        "🇨🇾 塞浦路斯 (Cyprus) 06"
+        "🇨🇾 塞浦路斯 (Cyprus) 05"
       ]
     },
     {
@@ -135,8 +110,7 @@
         "🇨🇾 塞浦路斯 (Cyprus) 02",
         "🇨🇾 塞浦路斯 (Cyprus) 03",
         "🇨🇾 塞浦路斯 (Cyprus) 04",
-        "🇨🇾 塞浦路斯 (Cyprus) 05",
-        "🇨🇾 塞浦路斯 (Cyprus) 06"
+        "🇨🇾 塞浦路斯 (Cyprus) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

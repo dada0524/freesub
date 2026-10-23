@@ -5,13 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
-  server: 176.32.34.253
-  port: 18443
+  server: 77.90.61.135
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  type: vless
+  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
+  tls: true
+  reality-opts:
+    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
+    short-id: ce1dc482
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 02
+  server: 45.128.78.178
+  port: 443
+  udp: true
+  type: vless
+  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 (Russia) 03
   server: 113.30.154.239
   port: 8443
   udp: true
@@ -23,39 +40,35 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
   client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 03
-  server: 77.90.61.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
-  tls: true
-  reality-opts:
-    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
-    short-id: ce1dc482
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 04
+  server: 195.58.49.34
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+- name: 🇷🇺 俄罗斯 (Russia) 05
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
-- name: 🇷🇺 俄罗斯 (Russia) 05
-  server: 46.17.44.216
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
 - name: 🇷🇺 俄罗斯 (Russia) 06
-  server: 176.32.33.254
-  port: 18443
+  server: 104.21.35.17
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  type: vless
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
+  tls: true
+  servername: xstack.mahanfixe.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /xiron
+    headers:
+      Host: xstack.mahanfixe.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 07
   server: 193.233.253.180
   port: 8444
@@ -72,7 +85,7 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 08
-  server: 9f6635t.msk1.h1clayd.click
+  server: 45.91.52.28
   port: 443
   udp: true
   type: vless
@@ -82,18 +95,44 @@ proxies:
     public-key: aovrqfVIxA_POvJorIg05wBQJM9nZ859c0fsNL7v9RM
     short-id: 0ea5f9d7955c3971
   servername: 9f6635t.msk1.h1clayd.click
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 09
-  server: 185.147.27.183
+  server: du-rov.secureservice.top
   port: 8443
   udp: true
   type: vless
-  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
   flow: xtls-rprx-vision
   tls: true
-  servername: user-6a917f32.noooo.win
-  skip-cert-verify: false
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 10
+  server: 46.254.17.88
+  port: 30065
+  udp: true
+  type: vless
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  servername: a3.eosapp.net
   client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 11
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -108,6 +147,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07
   - 🇷🇺 俄罗斯 (Russia) 08
   - 🇷🇺 俄罗斯 (Russia) 09
+  - 🇷🇺 俄罗斯 (Russia) 10
+  - 🇷🇺 俄罗斯 (Russia) 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -122,5 +163,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07
   - 🇷🇺 俄罗斯 (Russia) 08
   - 🇷🇺 俄罗斯 (Russia) 09
+  - 🇷🇺 俄罗斯 (Russia) 10
+  - 🇷🇺 俄罗斯 (Russia) 11
 rules:
 - MATCH,PROXIES

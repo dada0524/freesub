@@ -14,32 +14,29 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽)
+- name: 🇩🇪 德国 (Germany) 02 (家宽)
+  server: 209.38.238.229
+  port: 20202
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽)
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽)
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽)
-  server: 183.109.131.75
-  port: 20086
-  udp: true
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
   server: 61.230.160.34
   port: 24215
   udp: true
@@ -49,52 +46,24 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
-  server: 9641684.sdf65h4.top
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 9641684.sdf65h4.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 07 (家宽)
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: s3.huhiuh.space
-  skip-cert-verify: true
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽)
-  - 🇰🇷 韩国 (South Korea) 02 (家宽)
+  - 🇩🇪 德国 (Germany) 02 (家宽)
   - 🇰🇷 韩国 (South Korea) 03 (家宽)
-  - 🇰🇷 韩国 (South Korea) 04 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
-  - 🇸🇬 新加坡 (Singapore) 07 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽)
-  - 🇰🇷 韩国 (South Korea) 02 (家宽)
+  - 🇩🇪 德国 (Germany) 02 (家宽)
   - 🇰🇷 韩国 (South Korea) 03 (家宽)
-  - 🇰🇷 韩国 (South Korea) 04 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
-  - 🇸🇬 新加坡 (Singapore) 07 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
 rules:
 - MATCH,PROXIES

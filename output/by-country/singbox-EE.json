@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01",
-      "server": "138.124.4.224",
-      "server_port": 443,
-      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "login.sakhweb.fyi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
-          "short_id": "7271129440ade8fa"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02",
       "server": "93.89.220.37",
       "server_port": 443,
       "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
@@ -36,7 +15,7 @@
         "server_name": "ibm.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -50,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01",
-        "🇪🇪 爱沙尼亚 (Estonia) 02"
+        "🇪🇪 爱沙尼亚 (Estonia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01",
-        "🇪🇪 爱沙尼亚 (Estonia) 02"
+        "🇪🇪 爱沙尼亚 (Estonia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

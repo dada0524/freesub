@@ -23,18 +23,11 @@
       "tls": {
         "enabled": true,
         "server_name": "free.sahanwickramasinghe.me",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "free.sahanwickramasinghe.me"
-        }
+        "path": "/"
       }
     },
     {

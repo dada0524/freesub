@@ -11,15 +11,26 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02
-  server: 156.229.163.237
-  port: 10238
+  server: 185.253.116.33
+  port: 14430
   udp: true
   type: vless
-  uuid: f97f81df-edac-47b6-badb-316125e61bfb
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 185.253.116.33
+- name: 🇦🇪 阿联酋 (UAE) 03
+  server: 57.129.130.34
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 53367702-4b8d-431a-a193-34d7d057a065
   tls: true
   servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
   skip-cert-verify: false
@@ -29,21 +40,12 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 03
-  server: 185.253.116.33
-  port: 14430
-  udp: true
-  type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  network: ws
-  ws-opts:
-    path: /vless
 - name: 🇦🇪 阿联酋 (UAE) 04
-  server: 57.129.52.47
-  port: 52014
+  server: 154.31.112.237
+  port: 26418
   udp: true
   type: vless
-  uuid: ecc4675b-1607-4699-8b20-23af97b671af
+  uuid: efb84a31-24cb-4d95-83bf-d7153c4b3a92
   tls: true
   servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
   skip-cert-verify: false
@@ -54,67 +56,36 @@ proxies:
     headers:
       Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 05
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: ee1676ab-360f-4da3-848a-7db3cc574760
-  tls: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 06
-  server: 179.61.251.244
+  server: 116.204.164.60
   port: 7443
   udp: true
   type: vless
-  uuid: 868261d7-e3fb-4c34-8fa3-c5059f83019e
+  uuid: c676be7d-b481-4bba-88d0-65855e09dc67
   tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 06
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: af42cdf8-701e-4a51-b196-a80281dcbe24
+  tls: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 07
-  server: 79.137.199.52
-  port: 21
-  udp: true
-  type: vless
-  uuid: 763e2ddd-c830-4f4f-801c-f6f2c3418d4f
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 08
-  server: 144.31.135.38
-  port: 9444
-  udp: true
-  type: vless
-  uuid: 01c96414-9fcd-4f79-9274-2c8d8045e48d
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 09
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -124,7 +95,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10
+- name: 🇦🇪 阿联酋 (UAE) 08
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -133,22 +104,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 11
-  server: 128.241.25.72
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 65f26a08-9a5e-4b28-9004-f98676cc1e49
-  tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristifp=chrome
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -162,9 +117,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06
   - 🇦🇪 阿联酋 (UAE) 07
   - 🇦🇪 阿联酋 (UAE) 08
-  - 🇦🇪 阿联酋 (UAE) 09
-  - 🇦🇪 阿联酋 (UAE) 10
-  - 🇦🇪 阿联酋 (UAE) 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -178,8 +130,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06
   - 🇦🇪 阿联酋 (UAE) 07
   - 🇦🇪 阿联酋 (UAE) 08
-  - 🇦🇪 阿联酋 (UAE) 09
-  - 🇦🇪 阿联酋 (UAE) 10
-  - 🇦🇪 阿联酋 (UAE) 11
 rules:
 - MATCH,PROXIES

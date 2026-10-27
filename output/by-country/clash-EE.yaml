@@ -5,30 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01
-  server: 79.98.37.106
-  port: 443
+  server: 83.147.216.223
+  port: 4433
   udp: true
   type: vless
-  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
-  flow: xtls-rprx-vision
+  uuid: 660174a2-d32d-4521-840d-d1853bfc80b8
   tls: true
-  reality-opts:
-    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
-  servername: ee-central.v8x2b.lol
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02
-  server: 93.89.220.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02
+  server: est.luxes.network
+  port: 8443
+  udp: true
+  type: vless
+  uuid: a9e5d7ed-ce1a-48eb-9767-4de54fcfaba7
+  tls: true
+  servername: est.luxes.network
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /assets
+    headers:
+      Host: est.luxes.network
 proxy-groups:
 - name: PROXIES
   type: select

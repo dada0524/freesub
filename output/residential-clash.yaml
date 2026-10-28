@@ -4,21 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽)
+- name: 🇺🇸 美国 (United States) 01 (家宽)
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽)
   server: 218.237.185.234
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
-  server: kw119.zxmm.eu.org
-  port: 20031
-  udp: true
-  type: trojan
-  password: 00a72bf349e6479b
-  sni: kw119.zxmm.eu.org
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 03 (家宽)
   server: 144.24.140.37
   port: 443
@@ -39,16 +41,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇺🇸 美国 (United States) 01 (家宽)
+  - 🇰🇷 韩国 (South Korea) 02 (家宽)
   - 🇸🇬 新加坡 (Singapore) 03 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇺🇸 美国 (United States) 01 (家宽)
+  - 🇰🇷 韩国 (South Korea) 02 (家宽)
   - 🇸🇬 新加坡 (Singapore) 03 (家宽)
 rules:
 - MATCH,PROXIES

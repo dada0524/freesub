@@ -4,8 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 01",
+      "server": "ams1.rvpn.app",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "x2A6AsyZ-rAllz0wbKHzWA"
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02",
+      "server": "185.253.116.33",
+      "server_port": 14430,
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 03",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -20,56 +39,14 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02",
-      "server": "217.60.72.225",
-      "server_port": 443,
-      "password": "329e13e4-ee7c-4802-ac72-5fcab79c2402",
-      "tls": {
-        "enabled": true,
-        "server_name": "forshynewh.duckdns.org",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03",
-      "server": "57.129.130.57",
-      "server_port": 52014,
-      "uuid": "201e0019-2e79-4147-8a09-e510d630abeb",
-      "tls": {
-        "enabled": true,
-        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
-        }
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04",
-      "server": "185.253.116.33",
-      "server_port": 14430,
-      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05",
-      "server": "203.137.165.164",
-      "server_port": 57554,
-      "uuid": "09de62f5-662a-4906-a66d-b1713b198bff",
+      "server": "57.129.130.57",
+      "server_port": 52014,
+      "uuid": "5cf5ed7b-6032-44a6-b008-f33fbc82530a",
       "tls": {
         "enabled": true,
-        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
+        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -80,13 +57,90 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
+          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05",
+      "server": "80.240.18.227",
+      "server_port": 10051,
+      "uuid": "f4d859eb-abc6-4c57-9eee-8fe9e2ef0f94",
+      "tls": {
+        "enabled": true,
+        "server_name": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 06",
+      "server": "185.125.103.62",
+      "server_port": 8082,
+      "uuid": "fa61fd81-dd3d-466d-ad4a-0d316c3e4003",
+      "tls": {
+        "enabled": true,
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristifp=chrome",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 07",
+      "server": "79.137.197.212",
+      "server_port": 2105,
+      "uuid": "260ea848-b5a2-4bdc-8ee7-af0fbfb198cd",
+      "tls": {
+        "enabled": true,
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 08",
+      "server": "forshynewh.duckdns.org",
+      "server_port": 443,
+      "password": "329e13e4-ee7c-4802-ac72-5fcab79c2402",
+      "tls": {
+        "enabled": true,
+        "server_name": "forshynewh.duckdns.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 09",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -100,7 +154,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 07",
+      "tag": "🇦🇪 阿联酋 (UAE) 10",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
@@ -123,7 +177,10 @@
         "🇦🇪 阿联酋 (UAE) 04",
         "🇦🇪 阿联酋 (UAE) 05",
         "🇦🇪 阿联酋 (UAE) 06",
-        "🇦🇪 阿联酋 (UAE) 07"
+        "🇦🇪 阿联酋 (UAE) 07",
+        "🇦🇪 阿联酋 (UAE) 08",
+        "🇦🇪 阿联酋 (UAE) 09",
+        "🇦🇪 阿联酋 (UAE) 10"
       ]
     },
     {
@@ -136,7 +193,10 @@
         "🇦🇪 阿联酋 (UAE) 04",
         "🇦🇪 阿联酋 (UAE) 05",
         "🇦🇪 阿联酋 (UAE) 06",
-        "🇦🇪 阿联酋 (UAE) 07"
+        "🇦🇪 阿联酋 (UAE) 07",
+        "🇦🇪 阿联酋 (UAE) 08",
+        "🇦🇪 阿联酋 (UAE) 09",
+        "🇦🇪 阿联酋 (UAE) 10"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

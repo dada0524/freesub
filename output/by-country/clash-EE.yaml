@@ -5,35 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01
-  server: 83.147.216.223
-  port: 4433
+  server: 79.182.39.232
+  port: 25895
   udp: true
   type: vless
-  uuid: 660174a2-d32d-4521-840d-d1853bfc80b8
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02
-  server: est.luxes.network
-  port: 8443
+  server: 177.3.208.65
+  port: 443
   udp: true
   type: vless
-  uuid: a9e5d7ed-ce1a-48eb-9767-4de54fcfaba7
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   tls: true
-  servername: est.luxes.network
+  servername: tgmansion.site
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /assets
+    path: /vless-ee
     headers:
-      Host: est.luxes.network
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select

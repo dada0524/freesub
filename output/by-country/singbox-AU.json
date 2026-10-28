@@ -4,35 +4,37 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01",
-      "server": "45.63.30.142",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": false
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime11.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02",
-      "server": "51.161.204.244",
+      "server": "51.161.204.242",
       "server_port": 443,
-      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
+      "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
-          "short_id": "0ad08b47f498efd2"
+          "public_key": "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE",
+          "short_id": "d15c17cef9b2e456"
         }
       }
     },
@@ -45,7 +47,40 @@
       "tls": {
         "enabled": true,
         "server_name": "au.tronsg.com",
-        "insecure": false
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04",
+      "server": "51.161.204.244",
+      "server_port": 443,
+      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
+          "short_id": "0ad08b47f498efd2"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05",
+      "server": "45.63.30.142",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "connectwithemployerstohireyouridealteam.com",
+        "insecure": true
       }
     },
     {
@@ -55,7 +90,9 @@
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01",
         "🇦🇺 澳大利亚 (Australia) 02",
-        "🇦🇺 澳大利亚 (Australia) 03"
+        "🇦🇺 澳大利亚 (Australia) 03",
+        "🇦🇺 澳大利亚 (Australia) 04",
+        "🇦🇺 澳大利亚 (Australia) 05"
       ]
     },
     {
@@ -64,7 +101,9 @@
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01",
         "🇦🇺 澳大利亚 (Australia) 02",
-        "🇦🇺 澳大利亚 (Australia) 03"
+        "🇦🇺 澳大利亚 (Australia) 03",
+        "🇦🇺 澳大利亚 (Australia) 04",
+        "🇦🇺 澳大利亚 (Australia) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

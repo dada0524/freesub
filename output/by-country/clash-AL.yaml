@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
-  server: kw119.zxmm.eu.org
-  port: 20031
+- name: 🇦🇱 AL 01
+  server: dns22.m3hrzd.ir
+  port: 1348
   udp: true
-  type: trojan
-  password: 00a72bf349e6479b
-  sni: kw119.zxmm.eu.org
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: LzEeLj2OP0DQmpPDtVTazdGC0cHcT0Kn
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+  - 🇦🇱 AL 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+  - 🇦🇱 AL 01
 rules:
 - MATCH,PROXIES

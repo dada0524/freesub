@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01
-  server: 154.46.31.106
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
   type: ss
@@ -23,7 +23,7 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: 185.156.44.99
+  sni: whatsapp.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04
   server: 46.28.67.55
@@ -39,16 +39,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 05
-  server: 162.249.125.133
-  port: 443
-  udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 06
   server: 82.117.255.174
   port: 443
   udp: true
@@ -61,6 +51,16 @@ proxies:
     short-id: 31e91d43e553bf32
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 06
+  server: 162.249.125.133
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
 proxy-groups:
 - name: PROXIES
   type: select

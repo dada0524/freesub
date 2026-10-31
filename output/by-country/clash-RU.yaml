@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
+  server: 159.194.251.76
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MODziWLa9qMuW-4yPa0rfw
+- name: 🇷🇺 俄罗斯 (Russia) 02
   server: 130.49.177.193
   port: 443
   udp: true
@@ -17,7 +24,14 @@ proxies:
     short-id: 681fc2dd643bc2f3
   servername: de-2.ffpn.pro
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02
+- name: 🇷🇺 俄罗斯 (Russia) 03
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: lsu1v/3iNERwDDVwxCu5033KCUqQOoElYQul63kmqJ8=
+- name: 🇷🇺 俄罗斯 (Russia) 04
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -27,48 +41,84 @@ proxies:
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   servername: github.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 03
-  server: 104.21.70.21
-  port: 8080
+- name: 🇷🇺 俄罗斯 (Russia) 05
+  server: 130.49.189.54
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: hTTg7lwQMzpaF7KXpY3A8w
+- name: 🇷🇺 俄罗斯 (Russia) 06
+  server: 87.232.116.20
+  port: 443
   udp: true
   type: vless
-  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
-  network: ws
-  ws-opts:
-    path: /xiron
-    headers:
-      Host: xstack.mahanfixe.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 04
+  uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
+  tls: true
+  servername: fafeqdhlett2p5la6d.cdn.cachefleet.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 67h2o3erm0t9imsj
+- name: 🇷🇺 俄罗斯 (Russia) 07
   server: 185.22.155.121
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 05
-  server: 185.147.27.183
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ekb.eg
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 06
+- name: 🇷🇺 俄罗斯 (Russia) 08
   server: 103.88.243.142
   port: 11592
   udp: true
   type: hysteria2
   password: 41edb44c8e
   sni: srv-17e124.21freedom.net
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 09
+  server: 201.24.121.243
+  port: 443
+  udp: true
+  type: vless
+  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
+  tls: true
+  servername: kk-ru24a1.testkknegr.online
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 07
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vlgrpc
+- name: 🇷🇺 俄罗斯 (Russia) 10
+  server: 88.218.170.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: b872771d-e9d1-42d7-ad29-a9acff49ea2d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qC4VE5jv0q0ALYAfCNtAHU-kN32OdA-cqJmXpL4Y2VY
+    short-id: 3199b70105c62ce0
+  servername: www.sun6-21.userapi.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 11
+  server: 5.42.99.64
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 12
   server: 5.42.99.64
   port: 8443
   udp: true
@@ -81,20 +131,7 @@ proxies:
     short-id: 3cbc3d737fb9c4af
   servername: du-rov.secureservice.top
   client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 08
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 09
+- name: 🇷🇺 俄罗斯 (Russia) 13
   server: du-rov.secureservice.top
   port: 8443
   udp: true
@@ -107,27 +144,35 @@ proxies:
     short-id: 3cbc3d737fb9c4af
   servername: du-rov.secureservice.top
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 10
-  server: xssite.webredirect.org
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 14
+  server: 194.87.143.165
+  port: 8443
   udp: true
   type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   tls: true
-  servername: xssite.webredirect.org
+  servername: wsru1.wba-pn.ru
   skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 11
-  server: 159.194.251.76
-  port: 8388
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wsru1.wba-pn.ru
+- name: 🇷🇺 俄罗斯 (Russia) 15
+  server: wsru1.wba-pn.ru
+  port: 8443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: MODziWLa9qMuW-4yPa0rfw
-- name: 🇷🇺 俄罗斯 (Russia) 12
+  type: vless
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  tls: true
+  servername: wsru1.wba-pn.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇷🇺 俄罗斯 (Russia) 16
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -139,6 +184,34 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 17
+  server: xsru1.ddnsfree.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xsru1.ddnsfree.com
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 18
+  server: 147.45.175.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xsru2.freeddns.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -156,6 +229,12 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 10
   - 🇷🇺 俄罗斯 (Russia) 11
   - 🇷🇺 俄罗斯 (Russia) 12
+  - 🇷🇺 俄罗斯 (Russia) 13
+  - 🇷🇺 俄罗斯 (Russia) 14
+  - 🇷🇺 俄罗斯 (Russia) 15
+  - 🇷🇺 俄罗斯 (Russia) 16
+  - 🇷🇺 俄罗斯 (Russia) 17
+  - 🇷🇺 俄罗斯 (Russia) 18
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -173,5 +252,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 10
   - 🇷🇺 俄罗斯 (Russia) 11
   - 🇷🇺 俄罗斯 (Russia) 12
+  - 🇷🇺 俄罗斯 (Russia) 13
+  - 🇷🇺 俄罗斯 (Russia) 14
+  - 🇷🇺 俄罗斯 (Russia) 15
+  - 🇷🇺 俄罗斯 (Russia) 16
+  - 🇷🇺 俄罗斯 (Russia) 17
+  - 🇷🇺 俄罗斯 (Russia) 18
 rules:
 - MATCH,PROXIES

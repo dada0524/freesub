@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -33,7 +33,7 @@
       "tls": {
         "enabled": true,
         "server_name": "exploreeducationsectoropportunitiestodayandadvancecareers.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -48,12 +48,35 @@
         "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk",
           "short_id": "7c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 04",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgmansion.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-il",
+        "headers": {
+          "Host": "tgmansion.site"
         }
       }
     },
@@ -64,7 +87,8 @@
         "auto",
         "🇮🇱 以色列 (Israel) 01",
         "🇮🇱 以色列 (Israel) 02",
-        "🇮🇱 以色列 (Israel) 03"
+        "🇮🇱 以色列 (Israel) 03",
+        "🇮🇱 以色列 (Israel) 04"
       ]
     },
     {
@@ -73,7 +97,8 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01",
         "🇮🇱 以色列 (Israel) 02",
-        "🇮🇱 以色列 (Israel) 03"
+        "🇮🇱 以色列 (Israel) 03",
+        "🇮🇱 以色列 (Israel) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

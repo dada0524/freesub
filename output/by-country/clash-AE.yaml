@@ -18,7 +18,7 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03
@@ -30,20 +30,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 185.253.116.33
 - name: 🇦🇪 阿联酋 (UAE) 04
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 05
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -54,6 +41,28 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇦🇪 阿联酋 (UAE) 06
+  server: app-mi-26.spbstudentlife.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc
+    short-id: a7856800c2deb7b2
+  servername: assets-mi-26.spbstudentlife.com
+  client-fingerprint: randomized
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +73,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
   - 🇦🇪 阿联酋 (UAE) 05
+  - 🇦🇪 阿联酋 (UAE) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +84,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
   - 🇦🇪 阿联酋 (UAE) 05
+  - 🇦🇪 阿联酋 (UAE) 06
 rules:
 - MATCH,PROXIES

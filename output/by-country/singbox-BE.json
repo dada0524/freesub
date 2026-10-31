@@ -7,8 +7,8 @@
       "type": "vless",
       "tag": "🇧🇪 比利时 (Belgium) 01",
       "server": "104.21.64.198",
-      "server_port": 2095,
-      "uuid": "73796e63-0000-4000-8000-000000000008",
+      "server_port": 2086,
+      "uuid": "73796e63-0000-4000-8000-000000000007",
       "transport": {
         "type": "ws",
         "path": "/sync",
@@ -20,31 +20,12 @@
     {
       "type": "vless",
       "tag": "🇧🇪 比利时 (Belgium) 02",
-      "server": "172.67.209.13",
-      "server_port": 443,
-      "uuid": "fa45096d-bed0-ad80-c773-23c30000001b",
-      "tls": {
-        "enabled": true,
-        "server_name": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev",
-        "insecure": false
-      },
+      "server": "172.67.155.136",
+      "server_port": 2095,
+      "uuid": "73796e63-0000-4000-8000-000000000008",
       "transport": {
         "type": "ws",
-        "path": "/sync ",
-        "headers": {
-          "Host": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 03",
-      "server": "104.21.64.198",
-      "server_port": 2086,
-      "uuid": "73796e63-0000-4000-8000-000000000007",
-      "transport": {
-        "type": "ws",
-        "path": "/",
+        "path": "/sync",
         "headers": {
           "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
         }
@@ -56,8 +37,7 @@
       "outbounds": [
         "auto",
         "🇧🇪 比利时 (Belgium) 01",
-        "🇧🇪 比利时 (Belgium) 02",
-        "🇧🇪 比利时 (Belgium) 03"
+        "🇧🇪 比利时 (Belgium) 02"
       ]
     },
     {
@@ -65,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇪 比利时 (Belgium) 01",
-        "🇧🇪 比利时 (Belgium) 02",
-        "🇧🇪 比利时 (Belgium) 03"
+        "🇧🇪 比利时 (Belgium) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,20 +4,38 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
-      "server": "213.183.63.60",
-      "server_port": 9028,
-      "method": "aes-256-cfb",
-      "password": "9eeJ2fwnZA5Fxgz8"
+      "server": "www.speedtest.net",
+      "server_port": 8443,
+      "password": "uFepQ5r4JSusbY",
+      "tls": {
+        "enabled": true,
+        "server_name": "floral-grass-aa1e.dianawpewpek1.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "floral-grass-aa1e.dianawpewpek1.workers.dev"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02",
       "server": "213.183.63.60",
-      "server_port": 9029,
+      "server_port": 9061,
       "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
+      "password": "4R3hUfZ2FHhDmNcP"
     },
     {
       "type": "shadowsocks",
@@ -31,33 +49,33 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04",
       "server": "213.183.63.60",
-      "server_port": 9085,
+      "server_port": 9028,
       "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "password": "9eeJ2fwnZA5Fxgz8"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 05",
       "server": "213.183.63.60",
-      "server_port": 9064,
+      "server_port": 9029,
       "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
+      "password": "dU3DSNS8wYPXzEKw"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 06",
       "server": "213.183.63.60",
-      "server_port": 9030,
+      "server_port": 9049,
       "method": "aes-256-cfb",
-      "password": "GeregetR8cvQHzYr"
+      "password": "PRBf4BS2HvJqtWxY"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 07",
       "server": "213.183.63.60",
-      "server_port": 9066,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "shadowsocks",
@@ -68,45 +86,24 @@
       "password": "aLpQtfEZe445QyHk"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 09",
-      "server": "93.152.223.244",
-      "server_port": 443,
-      "uuid": "706bce83-91db-4260-b175-cba29145cd56",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ddk5-ger.newagetechnologies.live",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "yKwDGqOdkC_nEPOQHMvAQLPcPK8YHskv_opYoY66Yk8",
-          "short_id": ""
-        }
-      }
+      "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 10",
       "server": "213.183.63.60",
-      "server_port": 9061,
+      "server_port": 9085,
       "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 11",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 12",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 11",
       "server": "195.123.226.21",
       "server_port": 443,
       "uuid": "6589c320-db68-43cd-a273-b46299bab355",
@@ -140,8 +137,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 08",
         "🇧🇬 保加利亚 (Bulgaria) 09",
         "🇧🇬 保加利亚 (Bulgaria) 10",
-        "🇧🇬 保加利亚 (Bulgaria) 11",
-        "🇧🇬 保加利亚 (Bulgaria) 12"
+        "🇧🇬 保加利亚 (Bulgaria) 11"
       ]
     },
     {
@@ -158,8 +154,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 08",
         "🇧🇬 保加利亚 (Bulgaria) 09",
         "🇧🇬 保加利亚 (Bulgaria) 10",
-        "🇧🇬 保加利亚 (Bulgaria) 11",
-        "🇧🇬 保加利亚 (Bulgaria) 12"
+        "🇧🇬 保加利亚 (Bulgaria) 11"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

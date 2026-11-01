@@ -11,33 +11,22 @@
       "uuid": "bd2fb303-b4c7-49af-a8e3-5c6f11b005dd"
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽)",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16116,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 (家宽)",
-      "server": "122.176.216.52",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
+      "server": "0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com",
       "server_port": 443,
-      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+      "uuid": "ea800f9e-ca6c-11ef-8e74-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "app-6ada5023.deploy.meerasolution.com",
-        "insecure": false,
+        "server_name": "download.windowsupdate.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "android"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
-        "headers": {
-          "Host": "app-6ada5023.deploy.meerasolution.com"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
+          "short_id": ""
         }
       }
     },
@@ -47,8 +36,7 @@
       "outbounds": [
         "auto",
         "🇰🇷 韩国 (South Korea) 01 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽)",
-        "🇮🇳 印度 (India) 03 (家宽)"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)"
       ]
     },
     {
@@ -56,8 +44,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽)",
-        "🇮🇳 印度 (India) 03 (家宽)"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

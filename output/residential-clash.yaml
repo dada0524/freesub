@@ -4,36 +4,58 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽)
-  server: 112.169.175.199
-  port: 31157
+- name: 🇺🇸 美国 (United States) 01 (移动家宽)
+  server: us001.zestapp778.com
+  port: 57277
   udp: true
-  type: vless
-  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
-  server: 0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: us001.zestapp778.com
+  skip-cert-verify: false
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  server: 125.227.86.45
   port: 443
   udp: true
-  type: vless
-  uuid: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-  tls: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: chrome
+  type: trojan
+  password: 0a9f1f5a397bd427
+  sni: TG.freecodes
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: db
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  server: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 367e233c-2f54-11ee-9ae1-f23c9164ca5d
+  sni: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
+  server: ench-snet-app.w-ctrip.cn
+  port: 45502
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: ench-snet-app.w-ctrip.cn
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  - 🇺🇸 美国 (United States) 01 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  - 🇺🇸 美国 (United States) 01 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
 rules:
 - MATCH,PROXIES

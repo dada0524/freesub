@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 177.3.220.9
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
-  sni: nl1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 02
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -23,27 +15,19 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 03
-  server: 153.76.194.118
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
-  sni: finland.biznes.lol
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 04
-  server: 78.17.27.137
-  port: 8443
+- name: 🇫🇮 芬兰 (Finland) 02
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
+  uuid: b79d736d-0f10-4169-b626-362059d18204
   tls: true
   reality-opts:
-    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
-    short-id: a05ccbf2edb5ebd1
-  servername: www.aalto.fi
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+    short-id: 10351b07c712d2a2
+  servername: www.cloudflare.com
+  client-fingerprint: ''
+- name: 🇫🇮 芬兰 (Finland) 03
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -56,76 +40,41 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06
-  server: 65.109.211.81
+- name: 🇫🇮 芬兰 (Finland) 04
+  server: hw6.divarkhaghazi.com
   port: 465
   udp: true
   type: vless
   uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
   tls: true
-  servername: hw6.divarkhaghazi.com
+  servername: hw6.divarkhaghazi.com.
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 07
-  server: 65.109.210.221
-  port: 465
-  udp: true
-  type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  tls: true
-  servername: hw3.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 08
-  server: hw5.roghanmo.com
-  port: 465
-  udp: true
-  type: vless
-  uuid: a356fa77-7199-417a-80dd-0c0925789161
-  tls: true
-  servername: hw5.roghanmo.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw5.roghanmo.com
-- name: 🇫🇮 芬兰 (Finland) 09
-  server: 179.253.179.109
-  port: 62083
-  udp: true
-  type: vless
-  uuid: ef988d56-9c18-408e-ae1f-a144a332ebce
-  tls: true
-  servername: 177.3.220.159
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 10
-  server: 196.196.204.180
+- name: 🇫🇮 芬兰 (Finland) 05
+  server: 13.143.164.80
   port: 443
   udp: true
   type: vless
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  uuid: 2614a96d-e39f-4cca-a9c7-467a178c2c0a
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
-    short-id: b3c9d0c6bdd114a6
-  servername: 36a466g.fi1.h1clayd.click
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: fl3.lenvex.cc
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 0adb9638509b
+- name: 🇫🇮 芬兰 (Finland) 06
+  server: ench-snet-app.w-ctrip.cn
+  port: 41184
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: ench-snet-app.w-ctrip.cn
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -137,10 +86,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04
   - 🇫🇮 芬兰 (Finland) 05
   - 🇫🇮 芬兰 (Finland) 06
-  - 🇫🇮 芬兰 (Finland) 07
-  - 🇫🇮 芬兰 (Finland) 08
-  - 🇫🇮 芬兰 (Finland) 09
-  - 🇫🇮 芬兰 (Finland) 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -152,9 +97,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04
   - 🇫🇮 芬兰 (Finland) 05
   - 🇫🇮 芬兰 (Finland) 06
-  - 🇫🇮 芬兰 (Finland) 07
-  - 🇫🇮 芬兰 (Finland) 08
-  - 🇫🇮 芬兰 (Finland) 09
-  - 🇫🇮 芬兰 (Finland) 10
 rules:
 - MATCH,PROXIES

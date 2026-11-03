@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
+  server: 185.4.115.149
+  port: 1346
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
+- name: 🇫🇮 芬兰 (Finland) 02
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -15,7 +22,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02
+- name: 🇫🇮 芬兰 (Finland) 03
+  server: 201.58.177.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5adb25b6-b41a-46ac-a481-71651deb60c5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DA1kJXSsIsN8H-kZ51jEYHafTx50X-2RGG8KNZuCISg
+    short-id: da4d87fa
+  servername: xb1.huinaduok.fans
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -27,7 +47,7 @@ proxies:
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
   client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 03
+- name: 🇫🇮 芬兰 (Finland) 05
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -40,41 +60,18 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04
-  server: hw6.divarkhaghazi.com
-  port: 465
+- name: 🇫🇮 芬兰 (Finland) 06
+  server: areal1.greewebservices.ir
+  port: 2425
   udp: true
   type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  tls: true
-  servername: hw6.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 05
-  server: 13.143.164.80
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2614a96d-e39f-4cca-a9c7-467a178c2c0a
-  flow: xtls-rprx-vision
+  uuid: dfb070bf-0b53-43eb-be2b-4b34f7e1644d
   tls: true
   reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: fl3.lenvex.cc
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06
-  server: ench-snet-app.w-ctrip.cn
-  port: 41184
-  udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: ench-snet-app.w-ctrip.cn
-  skip-cert-verify: true
+    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
+    short-id: 9b60d3
+  servername: play.googleapis.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select

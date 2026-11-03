@@ -6,9 +6,23 @@
     {
       "type": "vless",
       "tag": "🇧🇪 比利时 (Belgium) 01",
-      "server": "172.67.155.136",
+      "server": "104.21.64.198",
       "server_port": 2086,
       "uuid": "73796e63-0000-4000-8000-000000000007",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇪 比利时 (Belgium) 02",
+      "server": "172.67.155.136",
+      "server_port": 2095,
+      "uuid": "73796e63-0000-4000-8000-000000000008",
       "transport": {
         "type": "ws",
         "path": "/sync",
@@ -22,14 +36,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01"
+        "🇧🇪 比利时 (Belgium) 01",
+        "🇧🇪 比利时 (Belgium) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01"
+        "🇧🇪 比利时 (Belgium) 01",
+        "🇧🇪 比利时 (Belgium) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

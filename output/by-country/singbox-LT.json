@@ -7,21 +7,29 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01",
       "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02",
-      "server": "195.238.126.20",
       "server_port": 9078,
       "method": "aes-256-cfb",
       "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02",
+      "server": "195.238.126.20",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03",
+      "server": "195.238.126.20",
+      "server_port": 9045,
+      "method": "aes-256-cfb",
+      "password": "Lp27rqyJq72bZsqX"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04",
       "server": "195.238.126.20",
       "server_port": 9002,
       "method": "aes-256-cfb",
@@ -29,19 +37,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05",
       "server": "195.238.126.20",
       "server_port": 9012,
       "method": "aes-256-cfb",
       "password": "xaupMUvhptwxdDUg"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05",
-      "server": "195.238.126.20",
-      "server_port": 9045,
-      "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
@@ -60,6 +60,14 @@
       "password": "y9VURyNzJWNRYEGQ"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08",
+      "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -70,7 +78,8 @@
         "🇱🇹 立陶宛 (Lithuania) 04",
         "🇱🇹 立陶宛 (Lithuania) 05",
         "🇱🇹 立陶宛 (Lithuania) 06",
-        "🇱🇹 立陶宛 (Lithuania) 07"
+        "🇱🇹 立陶宛 (Lithuania) 07",
+        "🇱🇹 立陶宛 (Lithuania) 08"
       ]
     },
     {
@@ -83,7 +92,8 @@
         "🇱🇹 立陶宛 (Lithuania) 04",
         "🇱🇹 立陶宛 (Lithuania) 05",
         "🇱🇹 立陶宛 (Lithuania) 06",
-        "🇱🇹 立陶宛 (Lithuania) 07"
+        "🇱🇹 立陶宛 (Lithuania) 07",
+        "🇱🇹 立陶宛 (Lithuania) 08"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -15,34 +15,13 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02",
       "server": "217.30.10.44",
-      "server_port": 9095,
+      "server_port": 9071,
       "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
+      "password": "mENfxTFQpRKKh4As"
     },
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 03",
-      "server": "2.26.255.215",
-      "server_port": 443,
-      "uuid": "69e41e64-a832-471a-b740-94577ca85520",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI",
-          "short_id": "50"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04",
       "server": "217.30.10.72",
       "server_port": 443,
       "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
@@ -59,6 +38,18 @@
           "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
           "short_id": "1a2b3c4d"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 04",
+      "server": "70.34.252.255",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
+        "insecure": false
       }
     },
     {
@@ -83,39 +74,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 06",
-      "server": "70.34.252.255",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 07",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 08",
+      "tag": "🇵🇱 波兰 (Poland) 06",
       "server": "150.251.113.34",
       "server_port": 443,
       "uuid": "d7d724b5-17ce-4f3c-877d-dfbf0f07afa1",
@@ -136,10 +96,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09",
+      "tag": "🇵🇱 波兰 (Poland) 07",
       "server": "145.63.143.205",
       "server_port": 8444,
-      "uuid": "35c9f200-7520-4005-b78e-f8a2fb9f68f7",
+      "uuid": "a8321cfe-39a2-48a0-a918-f01f7d9006ed",
       "tls": {
         "enabled": true,
         "server_name": "pl1.meshbeat.online",
@@ -159,13 +119,13 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 10",
-      "server": "84.23.52.120",
-      "server_port": 28453,
-      "uuid": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
+      "tag": "🇵🇱 波兰 (Poland) 08",
+      "server": "77.232.135.141",
+      "server_port": 8445,
+      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
       "tls": {
         "enabled": true,
-        "server_name": "pl.sparxiecn.com",
+        "server_name": "ru1.radiolumens.uk",
         "insecure": false,
         "alpn": [
           "h2",
@@ -173,89 +133,26 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lovelive"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 11",
-      "server": "84.23.52.120",
-      "server_port": 28449,
-      "uuid": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.sparxiecn.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lovelive"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 12",
-      "server": "84.23.52.120",
-      "server_port": 28450,
-      "uuid": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.sparxiecn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
           "fingerprint": "chrome"
         }
       },
       "transport": {
+        "type": "grpc",
+        "service_name": "beru-pl"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 09",
+      "server": "54.37.131.126",
+      "server_port": 80,
+      "uuid": "059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd",
+      "security": "auto",
+      "transport": {
         "type": "ws",
-        "path": "/lovelive"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 13",
-      "server": "82.118.22.161",
-      "server_port": 443,
-      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-          "short_id": "fa3ea655619a3e78"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 14",
-      "server": "tfhx4tjzmy39benjh0hg.sellerape.cc",
-      "server_port": 443,
-      "uuid": "03929684-0dcf-4add-bb02-2b2ba09d10a2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "tfhx4tjzmy39benjh0hg.sellerape.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Kamryj_IUYECmozGabqUqauA0k0QpVUEPSBSEKi-ED0",
-          "short_id": ""
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
         }
       }
     },
@@ -272,12 +169,7 @@
         "🇵🇱 波兰 (Poland) 06",
         "🇵🇱 波兰 (Poland) 07",
         "🇵🇱 波兰 (Poland) 08",
-        "🇵🇱 波兰 (Poland) 09",
-        "🇵🇱 波兰 (Poland) 10",
-        "🇵🇱 波兰 (Poland) 11",
-        "🇵🇱 波兰 (Poland) 12",
-        "🇵🇱 波兰 (Poland) 13",
-        "🇵🇱 波兰 (Poland) 14"
+        "🇵🇱 波兰 (Poland) 09"
       ]
     },
     {
@@ -292,12 +184,7 @@
         "🇵🇱 波兰 (Poland) 06",
         "🇵🇱 波兰 (Poland) 07",
         "🇵🇱 波兰 (Poland) 08",
-        "🇵🇱 波兰 (Poland) 09",
-        "🇵🇱 波兰 (Poland) 10",
-        "🇵🇱 波兰 (Poland) 11",
-        "🇵🇱 波兰 (Poland) 12",
-        "🇵🇱 波兰 (Poland) 13",
-        "🇵🇱 波兰 (Poland) 14"
+        "🇵🇱 波兰 (Poland) 09"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,8 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇦🇲 亚美尼亚 (Armenia) 01",
+      "server": "208.103.161.16",
+      "server_port": 2096,
+      "password": "hWsj5AwIRPF8",
+      "tls": {
+        "enabled": true,
+        "server_name": "rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 02",
       "server": "157.228.64.24",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -15,7 +38,7 @@
         "server_name": "gb1.japancase.site",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -26,7 +49,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 02",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 03",
       "server": "157.228.71.76",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -36,7 +59,7 @@
         "server_name": "it1.japancase.site",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -51,7 +74,8 @@
       "outbounds": [
         "auto",
         "🇦🇲 亚美尼亚 (Armenia) 01",
-        "🇦🇲 亚美尼亚 (Armenia) 02"
+        "🇦🇲 亚美尼亚 (Armenia) 02",
+        "🇦🇲 亚美尼亚 (Armenia) 03"
       ]
     },
     {
@@ -59,7 +83,8 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇲 亚美尼亚 (Armenia) 01",
-        "🇦🇲 亚美尼亚 (Armenia) 02"
+        "🇦🇲 亚美尼亚 (Armenia) 02",
+        "🇦🇲 亚美尼亚 (Armenia) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

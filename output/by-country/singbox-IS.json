@@ -5,27 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01",
-      "server": "141.193.213.21",
-      "server_port": 2087,
-      "uuid": "0ef68b97-f878-4cea-b756-c56ea3632851",
+      "tag": "🇮🇸 冰岛 (Iceland) 01",
+      "server": "191.44.112.170",
+      "server_port": 443,
+      "uuid": "46d221fa-e9b4-748c-4eae-019a88e42991",
       "tls": {
         "enabled": true,
-        "server_name": "free.vkehi.store",
+        "server_name": "orbylume.my.to",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "android"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/tvpn-tor/is",
         "headers": {
-          "Host": "free.vkehi.store"
+          "Host": "orbylume.my.to"
         }
       }
     },
@@ -34,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01"
+        "🇮🇸 冰岛 (Iceland) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01"
+        "🇮🇸 冰岛 (Iceland) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

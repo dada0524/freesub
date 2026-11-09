@@ -6,29 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01",
-      "server": "162.159.152.4",
-      "server_port": 443,
-      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
-      "tls": {
-        "enabled": true,
-        "server_name": "rAyAn-007.mAxImA.DpDnS.OrG",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "rAyAn-007.mAxImA.DpDnS.OrG"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -49,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03",
+      "tag": "🇨🇿 捷克 (Czech) 02",
       "server": "212.102.38.25",
       "server_port": 443,
       "uuid": "b34a52cb-cd52-49a8-9362-b8e97c151d49",
@@ -59,7 +36,7 @@
         "server_name": "udemy.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -70,8 +47,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03",
+      "server": "129.101.103.211",
+      "server_port": 443,
+      "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "de2.gacvpn.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8fSwTqCwJ2HWGxcTQsZs8Sx0hRk2Ru7HFdu-iLnesGg",
+          "short_id": "53d0d0611a"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 04",
-      "server": "server.slavkiti.monster",
+      "server": "193.124.17.190",
       "server_port": 443,
       "uuid": "6dfc9149-1ff9-41c3-8563-0ef284381731",
       "flow": "xtls-rprx-vision",
@@ -80,7 +78,7 @@
         "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

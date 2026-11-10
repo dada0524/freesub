@@ -10,29 +10,54 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: t.me
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: 209.33.160.122
-  port: 39098
+  server: 43.161.193.181
+  port: 443
   udp: true
   type: vless
-  uuid: 7852e4df-db54-4f75-a35e-3b8fbe89e56d
+  uuid: 280f4d33-69fb-4f0d-a4c3-fe0bf841009f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg
-  servername: dash.cloudflare.com
+    public-key: nf9eFC0yVVO-peA-wmZ1EEIwAaSstK2JN3tJV0WNJQE
+    short-id: 8c994df3c4e175a4
+  servername: addons.mozilla.org
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
-  password: f7d95364-607b-11ee-93af-f23c91369f2d
-  sni: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
-  skip-cert-verify: false
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+  sni: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 06
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -42,41 +67,19 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06
-  server: 9a07c316-tmkao0-u1vxv2-v3c2.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
-  sni: 9a07c316-tmkao0-u1vxv2-v3c2.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 07
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 08
-  server: 156.245.232.239
-  port: 35043
+  server: 162.19.192.89
+  port: 16632
   udp: true
   type: vmess
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  uuid: 992b1bc6-6e1e-455d-940b-e99bd39f70a2
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: 0606f25bbb646de3feadb8d23c1c6217.mobgslb.tbcache.com
 proxy-groups:
 - name: PROXIES
   type: select

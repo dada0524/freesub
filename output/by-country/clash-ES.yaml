@@ -6,46 +6,46 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01
   server: 5.188.181.201
+  port: 9042
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+- name: 🇪🇸 西班牙 (Spain) 02
+  server: 5.188.181.201
+  port: 9014
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: KnJGad3FqTvjqbaX
+- name: 🇪🇸 西班牙 (Spain) 03
+  server: 5.188.181.201
   port: 9003
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: JdmRK9gMEqFgs8nP
-- name: 🇪🇸 西班牙 (Spain) 02
+- name: 🇪🇸 西班牙 (Spain) 04
   server: 5.188.181.201
-  port: 9027
+  port: 9005
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: EXN3S3eQpjE7EJu8
-- name: 🇪🇸 西班牙 (Spain) 03
+  password: ZET59LF6DvCC8KVt
+- name: 🇪🇸 西班牙 (Spain) 05
+  server: 5.188.181.201
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇪🇸 西班牙 (Spain) 06
   server: 5.188.181.201
   port: 9041
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: U6qnYRhfyDmn8sgn
-- name: 🇪🇸 西班牙 (Spain) 04
-  server: 5.188.181.201
-  port: 9025
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: XPtzA9sCug3SPR4c
-- name: 🇪🇸 西班牙 (Spain) 05
-  server: 5.188.181.201
-  port: 9029
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
-- name: 🇪🇸 西班牙 (Spain) 06
-  server: 5.188.181.201
-  port: 9031
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: BwcAUZk8hUFAkDGN
 - name: 🇪🇸 西班牙 (Spain) 07
   server: 5.188.181.201
   port: 9019
@@ -55,32 +55,32 @@ proxies:
   password: GA9KzeEgvfxNrgmM
 - name: 🇪🇸 西班牙 (Spain) 08
   server: 5.188.181.201
-  port: 9005
+  port: 9025
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: ZET59LF6DvCC8KVt
+  password: XPtzA9sCug3SPR4c
 - name: 🇪🇸 西班牙 (Spain) 09
   server: 5.188.181.201
-  port: 9054
+  port: 9029
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
+  password: dU3DSNS8wYPXzEKw
 - name: 🇪🇸 西班牙 (Spain) 10
   server: 5.188.181.201
-  port: 9014
+  port: 9020
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: KnJGad3FqTvjqbaX
+  password: BNmAXXxAHYpTRdzu
 - name: 🇪🇸 西班牙 (Spain) 11
-  server: 5.188.181.201
-  port: 9040
+  server: 193.148.19.214
+  port: 12798
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: p9z5BVADH2YFs3MN
+  cipher: aes-128-gcm
+  password: cd706a104284a70f9cffe6ac1df63c18
 - name: 🇪🇸 西班牙 (Spain) 12
   server: 66.163.118.103
   port: 19999
@@ -89,14 +89,14 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 13
-  server: 193.148.19.214
-  port: 12798
+  server: 62.93.179.97
+  port: 19999
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: cd706a104284a70f9cffe6ac1df63c18
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 14
-  server: 62.93.179.97
+  server: 62.93.179.117
   port: 19999
   udp: true
   type: ss
@@ -110,20 +110,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 16
-  server: 62.93.179.117
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 17
-  server: 79.127.139.242
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 18
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -134,16 +120,15 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 19
-  server: 66.163.118.244
-  port: 443
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 17
+  server: 79.127.139.242
+  port: 19999
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 66.163.118.244
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 20
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇪🇸 西班牙 (Spain) 18
   server: 66.163.118.166
   port: 443
   udp: true
@@ -151,7 +136,7 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: learn.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 21
+- name: 🇪🇸 西班牙 (Spain) 19
   server: 66.163.118.40
   port: 443
   udp: true
@@ -159,18 +144,38 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: cdn.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 22
-  server: 46.28.71.247
+- name: 🇪🇸 西班牙 (Spain) 20
+  server: 66.163.118.113
   port: 443
   udp: true
   type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
+    public-key: PwN5VWqwWKVfrqqrbLE4kzVu9vIXSENAUiAPjMWIrVY
+    short-id: 32209e627ee109c7
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 21
+  server: 66.163.118.203
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 22
+  server: 156.252.229.203
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 585a421d-d782-4420-912e-dd58ff5966d7
+  tls: true
+  reality-opts:
+    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
+    short-id: 974f7f8f
+  servername: play.googleapis.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 23
   server: 66.163.118.131
@@ -189,32 +194,18 @@ proxies:
   sni: resources.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 - name: 🇪🇸 西班牙 (Spain) 25
-  server: 49930ag.es8.h1clayd.click
+  server: 46.28.71.247
   port: 443
   udp: true
   type: vless
-  uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: H_sPS4IJjHa4Wd7WLAtp_eamROtKBAj-G0UcMBHLHQw
-    short-id: 2437eeeb791b6d80
-  servername: 49930ag.es8.h1clayd.click
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 61c20be08f4f
-- name: 🇪🇸 西班牙 (Spain) 26
-  server: 156.252.229.203
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 585a421d-d782-4420-912e-dd58ff5966d7
-  tls: true
-  reality-opts:
-    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
-    short-id: 974f7f8f
-  servername: play.googleapis.com
-  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -245,7 +236,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 23
   - 🇪🇸 西班牙 (Spain) 24
   - 🇪🇸 西班牙 (Spain) 25
-  - 🇪🇸 西班牙 (Spain) 26
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -276,6 +266,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 23
   - 🇪🇸 西班牙 (Spain) 24
   - 🇪🇸 西班牙 (Spain) 25
-  - 🇪🇸 西班牙 (Spain) 26
 rules:
 - MATCH,PROXIES

@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01",
-      "server": "45.63.30.142",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -32,8 +20,45 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02",
+      "server": "50.6.54.163",
+      "server_port": 443,
+      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2vd1kmOeZpjjDpgN75FMhwFRzPjNfzvLoUM5LlLrm2U",
+          "short_id": "26b26357bfcd59a1"
+        }
+      }
+    },
+    {
       "type": "trojan",
       "tag": "🇦🇺 澳大利亚 (Australia) 03",
+      "server": "45.63.30.142",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "connectwithemployerstohireyouridealteam.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04",
       "server": "au001.zestapp778.com",
       "server_port": 54374,
       "password": "5t6i121em5lkmsmk",
@@ -48,13 +73,31 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05",
+      "server": "au.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "au.tronsg.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01",
         "🇦🇺 澳大利亚 (Australia) 02",
-        "🇦🇺 澳大利亚 (Australia) 03"
+        "🇦🇺 澳大利亚 (Australia) 03",
+        "🇦🇺 澳大利亚 (Australia) 04",
+        "🇦🇺 澳大利亚 (Australia) 05"
       ]
     },
     {
@@ -63,7 +106,9 @@
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01",
         "🇦🇺 澳大利亚 (Australia) 02",
-        "🇦🇺 澳大利亚 (Australia) 03"
+        "🇦🇺 澳大利亚 (Australia) 03",
+        "🇦🇺 澳大利亚 (Australia) 04",
+        "🇦🇺 澳大利亚 (Australia) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

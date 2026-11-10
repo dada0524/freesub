@@ -5,23 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01",
-      "server": "170.114.46.6",
-      "server_port": 2096,
-      "uuid": "efd11a89-7506-44ce-95b6-6654859f155b",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 01",
+      "server": "216.106.191.201",
+      "server_port": 10403,
+      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pcloud.z-tas.com",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "pcloud.z-tas.com"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ",
+          "short_id": "6aa50b0cc8d23464"
         }
       }
     },
@@ -30,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01"
+        "🇸🇦 沙特 (Saudi Arabia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01"
+        "🇸🇦 沙特 (Saudi Arabia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

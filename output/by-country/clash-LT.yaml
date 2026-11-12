@@ -13,39 +13,39 @@ proxies:
   password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 (Lithuania) 02
   server: 195.238.126.20
-  port: 9045
+  port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
+  password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 03
-  server: 195.238.126.20
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 04
-  server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 05
   server: 195.238.126.20
   port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 06
+- name: 🇱🇹 立陶宛 (Lithuania) 04
   server: 195.238.126.20
-  port: 9002
+  port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
+  password: Lp27rqyJq72bZsqX
+- name: 🇱🇹 立陶宛 (Lithuania) 05
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 06
+  server: 195.238.126.20
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 (Lithuania) 07
   server: 195.238.126.20
   port: 9011
@@ -53,19 +53,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 08
-  server: 84.32.209.103
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3f25b15b-1777-4c08-9ade-60336ac92a82
-  tls: true
-  servername: edge-lt.lindenpixel.com
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,7 +65,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05
   - 🇱🇹 立陶宛 (Lithuania) 06
   - 🇱🇹 立陶宛 (Lithuania) 07
-  - 🇱🇹 立陶宛 (Lithuania) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,6 +77,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05
   - 🇱🇹 立陶宛 (Lithuania) 06
   - 🇱🇹 立陶宛 (Lithuania) 07
-  - 🇱🇹 立陶宛 (Lithuania) 08
 rules:
 - MATCH,PROXIES

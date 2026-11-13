@@ -5,59 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  server: 212.41.9.190
-  port: 2093
-  udp: true
-  type: vless
-  uuid: db57c865-2318-4fd2-8aea-e8ba58ec696d
-  tls: true
-  reality-opts:
-    public-key: QbKQ1yte4_2YD425jzcAy4Ibvj0BYfqKJ54k9WMSRFs
-    short-id: 5284fea4
-  servername: s3.storage.selcloud.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cas-kz
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
-  server: 38.107.234.57
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  tls: true
-  servername: 3h-kazakhstan1.09vpn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
-  server: 176.120.21.23
-  port: 443
-  udp: true
-  type: vless
-  uuid: 83cc8226-1087-49ae-aac3-1f157ddc57b4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OAU9917HKYqvTO59c9SvAL9BBh8v85tfJhw5PMg-2iU
-    short-id: c4d4cf50489d51
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05
   server: 185.246.155.91
   port: 10403
   udp: true
@@ -70,7 +17,7 @@ proxies:
     short-id: 6859f5b59e55aa30
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -82,6 +29,32 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
+  server: 176.120.21.23
+  port: 443
+  udp: true
+  type: vless
+  uuid: 83cc8226-1087-49ae-aac3-1f157ddc57b4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OAU9917HKYqvTO59c9SvAL9BBh8v85tfJhw5PMg-2iU
+    short-id: c4d4cf50489d51
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  tls: true
+  servername: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -91,8 +64,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -102,7 +73,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06
 rules:
 - MATCH,PROXIES

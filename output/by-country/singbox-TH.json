@@ -4,27 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 01",
-      "server": "help1.digikala-aparat-zula.com",
-      "server_port": 443,
-      "uuid": "20e565e1-3858-40bf-94e8-4ec9624fc985",
-      "tls": {
-        "enabled": true,
-        "server_name": "wallweb8.pages.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fp=chrome",
-        "headers": {
-          "Host": "wallweb8.pages.dev"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇹🇭 泰国 (Thailand) 02",
+      "tag": "🇹🇭 泰国 (Thailand) 01",
       "server": "119.46.51.45",
       "server_port": 37515,
       "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
@@ -35,16 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01",
-        "🇹🇭 泰国 (Thailand) 02"
+        "🇹🇭 泰国 (Thailand) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01",
-        "🇹🇭 泰国 (Thailand) 02"
+        "🇹🇭 泰国 (Thailand) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

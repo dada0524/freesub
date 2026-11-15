@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇱 AL 01
-  server: 185.4.115.149
-  port: 1348
+- name: 🇸🇬 新加坡 (Singapore) 01 (家宽)
+  server: 195.133.135.238
+  port: 10086
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
+  type: vmess
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇱 AL 01
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL 01
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽)
 rules:
 - MATCH,PROXIES

@@ -38,14 +38,21 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04",
-      "server": "84.235.244.108",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
+      "server": "45.86.228.39",
+      "server_port": 443,
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ae1.gofizzin.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6_gm-7Bn-4wN79POTNyDJrJvPh1I5SSiO85zMKpKRUI",
+          "short_id": "29967a52"
         }
       }
     },
@@ -61,32 +68,14 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 06",
-      "server": "16.106.7.232",
-      "server_port": 20086,
-      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇦🇪 阿联酋 (UAE) 07",
-      "server": "151.241.19.44",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -99,8 +88,7 @@
         "🇦🇪 阿联酋 (UAE) 03",
         "🇦🇪 阿联酋 (UAE) 04",
         "🇦🇪 阿联酋 (UAE) 05",
-        "🇦🇪 阿联酋 (UAE) 06",
-        "🇦🇪 阿联酋 (UAE) 07"
+        "🇦🇪 阿联酋 (UAE) 06"
       ]
     },
     {
@@ -112,8 +100,7 @@
         "🇦🇪 阿联酋 (UAE) 03",
         "🇦🇪 阿联酋 (UAE) 04",
         "🇦🇪 阿联酋 (UAE) 05",
-        "🇦🇪 阿联酋 (UAE) 06",
-        "🇦🇪 阿联酋 (UAE) 07"
+        "🇦🇪 阿联酋 (UAE) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

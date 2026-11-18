@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇬🇪 格鲁吉亚 (Georgia) 01",
-      "server": "194.135.119.135",
+      "server": "94.183.234.245",
       "server_port": 443,
-      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ge1.gofizzin.com",
+        "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fVo5hYUD3VkxEetcXSMVWp7hjvz4YrKLNHDhGhn-d3M",
-          "short_id": "0640a12b"
+          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
+          "short_id": "7f1e29593aa94ad1"
         }
       }
     },

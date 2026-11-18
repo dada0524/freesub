@@ -4,31 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽)",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
-      "server": "9e5f5c4b-tomdc0-tpolhi-1rgxu.hk2.hyhuawei.com",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
+      "server": "88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com",
       "server_port": 443,
-      "uuid": "ea93064c-176c-11f0-885d-f23c91cfbbc9",
+      "password": "92bd8c68-6434-11ee-b644-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "download.windowsupdate.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
-          "short_id": ""
-        }
+        "server_name": "88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com",
+        "insecure": true
       }
     },
     {
@@ -36,16 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

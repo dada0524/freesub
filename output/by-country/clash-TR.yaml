@@ -5,30 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
-  server: 130.94.2.227
-  port: 443
+  server: turkey-ip1.mmdaqaorg.xyz
+  port: 50738
   udp: true
   type: vless
-  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   tls: true
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  servername: navi.bankrate.com
+  servername: turkey-ip1.mmdaqaorg.xyz
+  skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02
-  server: 188.225.78.178
+  server: 91.224.87.152
   port: 443
   udp: true
   type: vless
-  uuid: a4740bee-81ad-4a58-99c9-eca576ecb6e6
+  uuid: bc4c9ea8-b4ee-4451-80e1-dfcd5eceec4c
+  flow: xtls-rprx-vision
   tls: true
-  servername: cadrin.wtf
+  reality-opts:
+    public-key: ZKLerhOtbZ9D1Kvfz9w9LPGhYTQmfGs98HthyAy85AQ
+    short-id: ad51b5ecda6a9234
+  servername: www.tradingview.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 03
+  server: 178.177.17.207
+  port: 8446
+  udp: true
+  type: vless
+  uuid: f2f64531-6baf-476a-9d7c-a47b30a02b8a
+  tls: true
+  servername: 178.177.17.207
   skip-cert-verify: false
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cache.sync.v1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01
   - 🇹🇷 土耳其 (Turkey) 02
+  - 🇹🇷 土耳其 (Turkey) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01
   - 🇹🇷 土耳其 (Turkey) 02
+  - 🇹🇷 土耳其 (Turkey) 03
 rules:
 - MATCH,PROXIES

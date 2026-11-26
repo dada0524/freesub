@@ -6,24 +6,24 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 01",
-      "server": "13.55.52.44",
-      "server_port": 36712,
-      "password": "linlin-2026",
-      "tls": {
-        "enabled": true,
-        "server_name": "13.55.52.44",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02",
       "server": "3.106.35.101",
       "server_port": 36712,
       "password": "linlin-2026",
       "tls": {
         "enabled": true,
         "server_name": "3.106.35.101",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02",
+      "server": "13.55.52.44",
+      "server_port": 36712,
+      "password": "linlin-2026",
+      "tls": {
+        "enabled": true,
+        "server_name": "13.55.52.44",
         "insecure": true
       }
     },

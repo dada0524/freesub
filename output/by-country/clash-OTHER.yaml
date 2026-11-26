@@ -5,31 +5,131 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01
-  server: 104.17.70.206
-  port: 8443
+  server: fr-free.fastestrelay.com
+  port: 443
   udp: true
   type: vless
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
   tls: true
-  servername: free.sahanwickramasinghe.com
+  servername: fr-free.fastestrelay.com
   skip-cert-verify: false
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /700gvl
     headers:
-      Host: free.sahanwickramasinghe.com
+      Host: fr-free.fastestrelay.com
+- name: 🌐 其他地区 (Other) 02
+  server: chatgpt.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
+  tls: true
+  servername: sinavm2.soft10.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm2.soft10.ir
+- name: 🌐 其他地区 (Other) 03
+  server: 104.18.42.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 04
+  server: 104.18.42.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 05
+  server: 104.18.42.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 06
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 07
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01
+  - 🌐 其他地区 (Other) 02
+  - 🌐 其他地区 (Other) 03
+  - 🌐 其他地区 (Other) 04
+  - 🌐 其他地区 (Other) 05
+  - 🌐 其他地区 (Other) 06
+  - 🌐 其他地区 (Other) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01
+  - 🌐 其他地区 (Other) 02
+  - 🌐 其他地区 (Other) 03
+  - 🌐 其他地区 (Other) 04
+  - 🌐 其他地区 (Other) 05
+  - 🌐 其他地区 (Other) 06
+  - 🌐 其他地区 (Other) 07
 rules:
 - MATCH,PROXIES

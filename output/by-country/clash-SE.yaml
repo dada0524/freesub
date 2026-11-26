@@ -12,53 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02
-  server: 136.148.216.115
-  port: 443
-  udp: true
-  type: vless
-  uuid: 57a3fb3c-5788-4777-933e-882dd22f5b82
-  tls: true
-  reality-opts:
-    public-key: _c33IsYcvvy4t95zq8ydgtQ3pXpOK7eLdQqK3O7c2Ao
-    short-id: b684dc4aaba4a911
-  servername: ba0648t.se1.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 03
-  server: 138.124.86.230
-  port: 48115
-  udp: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-  tls: true
-  servername: 138-124-86-230.sslip.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 04
-  server: 62.93.166.184
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 05
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 06
   server: 138.199.55.230
   port: 1270
   udp: true
@@ -69,41 +22,39 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 07
-  server: 88.216.60.73
-  port: 443
+- name: 🇸🇪 瑞典 (Sweden) 03
+  server: 62.93.166.184
+  port: 1270
   udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: ios
-- name: 🇸🇪 瑞典 (Sweden) 08
-  server: 88.218.170.118
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9df9ee1a-0671-4c6c-93c7-65598fb946f7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Hk7E17R41exzrPKAOeETobKQ0LOAmuLSzFXdEwLSmiQ
-    short-id: b92d7008f05da71e
-  servername: ruswedmicro2.gangplatform.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 09
-  server: 92.63.189.39
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 7aa77858-f235-0003-9434-7ab060848b17
-  flow: xtls-rprx-vision
-  tls: true
-  servername: avelon.onl
+  servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 04
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 05
+  server: sajed.kdns.fr
+  port: 443
+  udp: true
+  type: vless
+  uuid: cffa0e31-7cce-4541-8a2e-4e115873090b
+  network: ws
+  ws-opts:
+    path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
+    headers:
+      Host: sajed.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,10 +65,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03
   - 🇸🇪 瑞典 (Sweden) 04
   - 🇸🇪 瑞典 (Sweden) 05
-  - 🇸🇪 瑞典 (Sweden) 06
-  - 🇸🇪 瑞典 (Sweden) 07
-  - 🇸🇪 瑞典 (Sweden) 08
-  - 🇸🇪 瑞典 (Sweden) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,9 +75,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03
   - 🇸🇪 瑞典 (Sweden) 04
   - 🇸🇪 瑞典 (Sweden) 05
-  - 🇸🇪 瑞典 (Sweden) 06
-  - 🇸🇪 瑞典 (Sweden) 07
-  - 🇸🇪 瑞典 (Sweden) 08
-  - 🇸🇪 瑞典 (Sweden) 09
 rules:
 - MATCH,PROXIES

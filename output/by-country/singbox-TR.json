@@ -4,9 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01",
-      "server": "turkey-ip1.mmdaqaorg.xyz",
+      "server": "38.180.104.37",
+      "server_port": 19084,
+      "method": "aes-128-gcm",
+      "password": "ff4d354078394558933d699be149ad69"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02",
+      "server": "143.246.136.128",
       "server_port": 50738,
       "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
       "tls": {
@@ -24,49 +32,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02",
-      "server": "91.224.87.152",
-      "server_port": 443,
-      "uuid": "bc4c9ea8-b4ee-4451-80e1-dfcd5eceec4c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZKLerhOtbZ9D1Kvfz9w9LPGhYTQmfGs98HthyAy85AQ",
-          "short_id": "ad51b5ecda6a9234"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03",
-      "server": "178.177.17.207",
-      "server_port": 8446,
-      "uuid": "f2f64531-6baf-476a-9d7c-a47b30a02b8a",
-      "tls": {
-        "enabled": true,
-        "server_name": "178.177.17.207",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ]
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01",
-        "🇹🇷 土耳其 (Turkey) 02",
-        "🇹🇷 土耳其 (Turkey) 03"
+        "🇹🇷 土耳其 (Turkey) 02"
       ]
     },
     {
@@ -74,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01",
-        "🇹🇷 土耳其 (Turkey) 02",
-        "🇹🇷 土耳其 (Turkey) 03"
+        "🇹🇷 土耳其 (Turkey) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

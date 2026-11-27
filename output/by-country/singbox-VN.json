@@ -5,37 +5,46 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01",
-      "server": "31.222.235.81",
-      "server_port": 443,
-      "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
+      "tag": "🇻🇳 越南 (Vietnam) 01",
+      "server": "103.163.24.22",
+      "server_port": 56026,
+      "uuid": "a1f0cbb8-c74a-4c27-b881-7b14d96aece1",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk",
-          "short_id": "d8b58872"
+          "public_key": "gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls",
+          "short_id": "99676967e6867063"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 02",
+      "server": "150.95.109.109",
+      "server_port": 2086,
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01"
+        "🇻🇳 越南 (Vietnam) 01",
+        "🇻🇳 越南 (Vietnam) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01"
+        "🇻🇳 越南 (Vietnam) 01",
+        "🇻🇳 越南 (Vietnam) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

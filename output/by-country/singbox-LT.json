@@ -6,6 +6,22 @@
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01",
+      "server": "195.238.126.84",
+      "server_port": 9039,
+      "method": "aes-256-cfb",
+      "password": "qYEN5HX4JKeVCdEC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02",
+      "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03",
       "server": "195.238.126.20",
       "server_port": 9045,
       "method": "aes-256-cfb",
@@ -13,15 +29,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02",
-      "server": "195.238.126.20",
-      "server_port": 9078,
-      "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04",
       "server": "195.238.126.20",
       "server_port": 9012,
       "method": "aes-256-cfb",
@@ -29,15 +37,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9001,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "UkXRsXvR6buDMG2Y"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 06",
+      "server": "195.238.126.20",
+      "server_port": 9011,
+      "method": "aes-256-cfb",
+      "password": "M3t2ZEQcMGRWBjRa"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07",
       "server": "195.238.126.20",
       "server_port": 9068,
       "method": "aes-256-cfb",
@@ -45,11 +61,31 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08",
       "server": "195.238.126.20",
-      "server_port": 9086,
+      "server_port": 9078,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "JCJpbRbQZNw9XFZG"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 09",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 10",
+      "server": "88.119.176.49",
+      "server_port": 443,
+      "password": "c0742f77-5495-43bf-b007-88d368774d7c",
+      "tls": {
+        "enabled": true,
+        "server_name": "litual3.harcho.shop",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
@@ -61,7 +97,11 @@
         "🇱🇹 立陶宛 (Lithuania) 03",
         "🇱🇹 立陶宛 (Lithuania) 04",
         "🇱🇹 立陶宛 (Lithuania) 05",
-        "🇱🇹 立陶宛 (Lithuania) 06"
+        "🇱🇹 立陶宛 (Lithuania) 06",
+        "🇱🇹 立陶宛 (Lithuania) 07",
+        "🇱🇹 立陶宛 (Lithuania) 08",
+        "🇱🇹 立陶宛 (Lithuania) 09",
+        "🇱🇹 立陶宛 (Lithuania) 10"
       ]
     },
     {
@@ -73,7 +113,11 @@
         "🇱🇹 立陶宛 (Lithuania) 03",
         "🇱🇹 立陶宛 (Lithuania) 04",
         "🇱🇹 立陶宛 (Lithuania) 05",
-        "🇱🇹 立陶宛 (Lithuania) 06"
+        "🇱🇹 立陶宛 (Lithuania) 06",
+        "🇱🇹 立陶宛 (Lithuania) 07",
+        "🇱🇹 立陶宛 (Lithuania) 08",
+        "🇱🇹 立陶宛 (Lithuania) 09",
+        "🇱🇹 立陶宛 (Lithuania) 10"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

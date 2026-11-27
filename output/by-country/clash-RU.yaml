@@ -5,43 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
+  server: 194.87.69.12
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+- name: 🇷🇺 俄罗斯 (Russia) 02
+  server: 45.158.197.237
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 18baf01c-99b2-4675-997c-1ec73e3eadff
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  servername: apple.com
+  client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 (Russia) 03
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-- name: 🇷🇺 俄罗斯 (Russia) 02
+- name: 🇷🇺 俄罗斯 (Russia) 04
+  server: 145.249.109.248
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5dd4822d-b8dc-49dd-84b6-c3ea44ef42f7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gM_rANbedeIHB3Y1ltLG60xS1i2TuYt0PKgAgC1TzR4
+    short-id: 29455a3a790acbd0
+  servername: mcsp.67resserv67.info
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 05
   server: 91.206.92.158
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇷🇺 俄罗斯 (Russia) 03
-  server: 200.169.179.233
-  port: 443
-  udp: true
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  servername: vps3.nemnogogo.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 04
-  server: 136.148.83.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: false
-  client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 05
+- name: 🇷🇺 俄罗斯 (Russia) 06
   server: 147.45.221.225
   port: 443
   udp: true
@@ -53,21 +63,92 @@ proxies:
   network: ws
   ws-opts:
     path: /media/ws/
-- name: 🇷🇺 俄罗斯 (Russia) 06
-  server: dc.insidenet.ru
-  port: 20443
+- name: 🇷🇺 俄罗斯 (Russia) 07
+  server: 136.148.83.69
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
+  sni: szqbx-ru-77dc.my-fade.cloud
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 08
+  server: 194.26.229.207
+  port: 2200
   udp: true
   type: vless
-  uuid: 67a31bdf-5846-409d-8b49-3d795e1a2a4f
+  uuid: f2d2907c-1d74-43eb-8fd2-fc55dfd92427
+  network: ws
+  ws-opts:
+    path: /v1
+- name: 🇷🇺 俄罗斯 (Russia) 09
+  server: 185.22.152.168
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 10
+  server: 194.26.229.207
+  port: 4100
+  udp: true
+  type: vless
+  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+- name: 🇷🇺 俄罗斯 (Russia) 11
+  server: 200.169.179.233
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 12
+  server: 195.206.235.232
+  port: 443
+  udp: true
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 13
+  server: 201.51.11.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: xE2CNenfDgtu28WQ23Bq2KfdkEj3XN42P_ZVou1YRC4
-    short-id: f847646adc2b82fe
-  servername: dc.insidenet.ru
-  client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 07
-  server: 147.45.175.81
+    public-key: GiDgVRVYrTkv1mZJeFVWkr736Iey2kqLM6L0eUbffV8
+  servername: absolute-disaster.org
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 14
+  server: 201.51.11.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GiDgVRVYrTkv1mZJeFVWkr736Iey2kqLM6L0eUbffV8
+  servername: absolute-disaster.org
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 15
+  server: xssite.webredirect.org
   port: 443
   udp: true
   type: vless
@@ -79,28 +160,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 08
-  server: 196.245.52.183
-  port: 443
-  udp: true
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
-  servername: 15b171g.nl7.h1clayd.click
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 5b79e8a94241
-- name: 🇷🇺 俄罗斯 (Russia) 09
-  server: 194.87.69.12
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
 proxy-groups:
 - name: PROXIES
   type: select
@@ -115,6 +174,12 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07
   - 🇷🇺 俄罗斯 (Russia) 08
   - 🇷🇺 俄罗斯 (Russia) 09
+  - 🇷🇺 俄罗斯 (Russia) 10
+  - 🇷🇺 俄罗斯 (Russia) 11
+  - 🇷🇺 俄罗斯 (Russia) 12
+  - 🇷🇺 俄罗斯 (Russia) 13
+  - 🇷🇺 俄罗斯 (Russia) 14
+  - 🇷🇺 俄罗斯 (Russia) 15
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -129,5 +194,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07
   - 🇷🇺 俄罗斯 (Russia) 08
   - 🇷🇺 俄罗斯 (Russia) 09
+  - 🇷🇺 俄罗斯 (Russia) 10
+  - 🇷🇺 俄罗斯 (Russia) 11
+  - 🇷🇺 俄罗斯 (Russia) 12
+  - 🇷🇺 俄罗斯 (Russia) 13
+  - 🇷🇺 俄罗斯 (Russia) 14
+  - 🇷🇺 俄罗斯 (Russia) 15
 rules:
 - MATCH,PROXIES

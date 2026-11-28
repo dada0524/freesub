@@ -19,7 +19,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
 - name: 🇦🇹 奥地利 (Austria) 03
-  server: 154.47.19.225
+  server: leviko-at0752.shopingggg.ir
   port: 1270
   udp: true
   type: vmess
@@ -29,20 +29,6 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇦🇹 奥地利 (Austria) 04
-  server: 104.21.44.113
-  port: 443
-  udp: true
-  type: vless
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
-  tls: true
-  servername: ancient-haze-d203.vpnetwork3567.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +37,6 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01
   - 🇦🇹 奥地利 (Austria) 02
   - 🇦🇹 奥地利 (Austria) 03
-  - 🇦🇹 奥地利 (Austria) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +45,5 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01
   - 🇦🇹 奥地利 (Austria) 02
   - 🇦🇹 奥地利 (Austria) 03
-  - 🇦🇹 奥地利 (Austria) 04
 rules:
 - MATCH,PROXIES

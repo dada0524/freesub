@@ -22,7 +22,7 @@
     {
       "type": "vmess",
       "tag": "🇦🇹 奥地利 (Austria) 03",
-      "server": "154.47.19.225",
+      "server": "leviko-at0752.shopingggg.ir",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -33,36 +33,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 04",
-      "server": "104.21.44.113",
-      "server_port": 443,
-      "uuid": "963A4918-A630-29DA-A873-093CDF8AD784",
-      "tls": {
-        "enabled": true,
-        "server_name": "ancient-haze-d203.vpnetwork3567.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "ancient-haze-d203.vpnetwork3567.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01",
         "🇦🇹 奥地利 (Austria) 02",
-        "🇦🇹 奥地利 (Austria) 03",
-        "🇦🇹 奥地利 (Austria) 04"
+        "🇦🇹 奥地利 (Austria) 03"
       ]
     },
     {
@@ -71,8 +48,7 @@
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01",
         "🇦🇹 奥地利 (Austria) 02",
-        "🇦🇹 奥地利 (Austria) 03",
-        "🇦🇹 奥地利 (Austria) 04"
+        "🇦🇹 奥地利 (Austria) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

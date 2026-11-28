@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01",
-      "server": "107.181.155.27",
+      "server": "tr.subscriptionservice.ir",
       "server_port": 2089,
       "method": "chacha20-ietf-poly1305",
-      "password": "T199MCnogZBKi0QJdcSgUnoL3U9wl7t1"
+      "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"
     },
     {
       "type": "selector",
